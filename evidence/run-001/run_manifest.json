@@ -1,0 +1,18 @@
+{
+  "expected_episodes": 2160,
+  "platform": "macOS-26.5.2-arm64-arm-64bit",
+  "protocol_sha256": "2ba3d4d87898c51dba18980cf4cf7488215bb7965b2ad671cb40a38fd75bd4dc",
+  "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+  "source_revision": "0a30de840b7841110bb758aa835340feeb00d9fa",
+  "source_sha256": {
+    "PROTOCOL.md": "2ba3d4d87898c51dba18980cf4cf7488215bb7965b2ad671cb40a38fd75bd4dc",
+    "tests/test_mechanism.py": "257e779d41df1347f746dc313513057e22224592db0b2f324a4a75cca2db4ee5",
+    "vtc/__init__.py": "cf22e97a0b3ef9d417374d24bc76badccc3232c0860141ccd43ed9bb38ffd99e",
+    "vtc/audit.py": "e1b3647e39e215a688f96b80940c0f9905d5eca4868325e28ec5e296e141901e",
+    "vtc/compare.py": "77e353aea8770ff3b004bb79ab6121b76ca7c9afa2a92dac05a37109e8ec0a22",
+    "vtc/evaluate.py": "cf739560fa6a7dab474ed5a28290e161a1caf6c5664eb9be8de8292c27afbab0",
+    "vtc/model.py": "657cd05c60757f57244ade0c0923ae9b470585e609e4a1dfff8a8fd12f1429d3",
+    "vtc/wrappers.py": "ab330b2a4c8320595eaa14c364e38f433ff48176d58bbff53af7c0dc5bd7043f"
+  },
+  "started_at_utc": "2026-10-01T08:27:01.418706+00:00"
+}

@@ -1,0 +1,7 @@
+{
+  "declared_at_utc": "2026-10-01T09:04:37.922751+00:00",
+  "protocol_sha256": "2ba3d4d87898c51dba18980cf4cf7488215bb7965b2ad671cb40a38fd75bd4dc",
+  "amendment_sha256": "7db2fc5d42f79c58453fd2aaea709d4c3049762f55ab81336de7965a83d4a1d5",
+  "evaluation_002_has_run": false,
+  "engineering_version": "v2-reserved-verification"
+}

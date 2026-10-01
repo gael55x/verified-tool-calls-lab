@@ -1,0 +1,58 @@
+%% Original mechanism exposition for arXiv:2608.02645v1.
+%% Editable source; no paper figure copied. Explicitly separate algorithms.
+sequenceDiagram
+    autonumber
+    participant W as Wrapper
+    participant A as Synthetic API
+    participant V as Read-only verifier
+    W->>A: Execute action with stable key
+    Note over A: Execution may commit fully, partially, later, or not at all
+    alt SUCCESS response
+        A-->>W: SUCCESS
+        alt Literal paper mode
+            Note over W: Return success immediately; no verification
+        else Engineering mode
+            W->>V: Check full task, including one append
+            V-->>W: TRUE, FALSE, or UNKNOWN
+            Note over W: Continue only within explicit retry and poll bounds
+        end
+    else Lost reply or timeout after commit
+        A-->>W: AMBIGUOUS
+        W->>V: Wait, then inspect visible state
+        alt TRUE
+            V-->>W: Effect verified
+            Note over W: Skip retry and return success
+        else FALSE
+            V-->>W: Effect absent in read view
+            Note over V: A stale view can produce a false negative
+            alt Literal mode at N=1
+                W->>A: Retry with the same key
+                Note over W: Loop exhausted; final retry response uninspected
+            else Engineering v2
+                alt Post-retry verification poll remains
+                    W->>A: Retry with the same key
+                    Note over A: Server contract determines repeated effects
+                    A-->>W: Inspect final retry response
+                    alt Retry response is definitive FAILURE
+                        Note over W: Stop immediately and return failure, no verification
+                    else Retry response is SUCCESS or AMBIGUOUS
+                        Note over W: Wait before verification only if AMBIGUOUS
+                        W->>V: Verify full task using reserved poll
+                        V-->>W: TRUE, FALSE, or UNKNOWN
+                    end
+                else No verification capacity remains
+                    Note over W: Withhold retry; return failure
+                end
+            end
+        else UNKNOWN
+            V-->>W: Inconclusive view
+            alt Literal mode at N=1
+                Note over W: Continue spends the only iteration; return failure
+            else Engineering mode
+                W->>V: Bounded additional polling; no blind retry
+            end
+        end
+    else Definitive FAILURE response
+        A-->>W: FAILURE
+        Note over W: Both modes stop; no verification or retry
+    end

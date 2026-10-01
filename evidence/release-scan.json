@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "text_files_scanned": 38,
+  "findings": [],
+  "scope": "allowlisted release files only; no credential-file reads; bounded regex/path/license inventory check",
+  "limitations": "not a security guarantee or independent review; SVG visual inspection pending",
+  "identity": "authenticated GitHub identity unverified; user-authorized account gael55x",
+  "medium_draft_included": false,
+  "third_party_source_snapshots_included": false
+}

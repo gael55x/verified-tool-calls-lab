@@ -1,0 +1,715 @@
+[
+  {
+    "task": "activate_customer",
+    "mode_version": "engineering_v1",
+    "reported_success": false,
+    "safe_at_return": true,
+    "safe_final": true,
+    "calls": 2,
+    "reads": 3,
+    "return_tick": 3,
+    "at_return": {
+      "customer": {
+        "id": "synthetic-c42",
+        "status": "ACTIVE",
+        "activated_at": 3
+      },
+      "messages": [
+        {
+          "customer_id": "synthetic-c42",
+          "message": "welcome"
+        }
+      ]
+    },
+    "final": {
+      "customer": {
+        "id": "synthetic-c42",
+        "status": "ACTIVE",
+        "activated_at": 3
+      },
+      "messages": [
+        {
+          "customer_id": "synthetic-c42",
+          "message": "welcome"
+        }
+      ]
+    },
+    "trace": [
+      {
+        "seq": 0,
+        "tick": 0,
+        "kind": "dispatch",
+        "attempt": 1,
+        "key": "8484f6ea54b541df7276412c3b8d40be61a802adb5f3661633158e9a15194a11",
+        "action": {
+          "task": "activate_customer",
+          "payload": {
+            "customer_id": "synthetic-c42",
+            "invoice_id": "synthetic-i42",
+            "amount": 1825
+          },
+          "operation_id": "activate_customer-logical-42",
+          "agent_id": "scripted-agent",
+          "timestamp_bucket": 0
+        },
+        "fault": {
+          "effect": "none",
+          "response": "AMBIGUOUS",
+          "visibility_delay": 0,
+          "unknown_until": 3,
+          "commit_delay": 0
+        }
+      },
+      {
+        "seq": 1,
+        "tick": 0,
+        "kind": "response_available",
+        "response": "AMBIGUOUS"
+      },
+      {
+        "seq": 2,
+        "tick": 0,
+        "kind": "response_inspected",
+        "response": "AMBIGUOUS"
+      },
+      {
+        "seq": 3,
+        "tick": 0,
+        "kind": "wait",
+        "ticks": 1
+      },
+      {
+        "seq": 4,
+        "tick": 1,
+        "kind": "read",
+        "operation_id": "activate_customer-logical-42",
+        "outcome": "UNKNOWN"
+      },
+      {
+        "seq": 5,
+        "tick": 1,
+        "kind": "verification",
+        "predicate": "full",
+        "outcome": "UNKNOWN"
+      },
+      {
+        "seq": 6,
+        "tick": 1,
+        "kind": "wait",
+        "ticks": 1
+      },
+      {
+        "seq": 7,
+        "tick": 2,
+        "kind": "read",
+        "operation_id": "activate_customer-logical-42",
+        "outcome": "UNKNOWN"
+      },
+      {
+        "seq": 8,
+        "tick": 2,
+        "kind": "verification",
+        "predicate": "full",
+        "outcome": "UNKNOWN"
+      },
+      {
+        "seq": 9,
+        "tick": 2,
+        "kind": "wait",
+        "ticks": 1
+      },
+      {
+        "seq": 10,
+        "tick": 3,
+        "kind": "read",
+        "operation_id": "activate_customer-logical-42",
+        "stale": false,
+        "view": {}
+      },
+      {
+        "seq": 11,
+        "tick": 3,
+        "kind": "verification",
+        "predicate": "full",
+        "outcome": "FALSE"
+      },
+      {
+        "seq": 12,
+        "tick": 3,
+        "kind": "dispatch",
+        "attempt": 2,
+        "key": "8484f6ea54b541df7276412c3b8d40be61a802adb5f3661633158e9a15194a11",
+        "action": {
+          "task": "activate_customer",
+          "payload": {
+            "customer_id": "synthetic-c42",
+            "invoice_id": "synthetic-i42",
+            "amount": 1825
+          },
+          "operation_id": "activate_customer-logical-42",
+          "agent_id": "scripted-agent",
+          "timestamp_bucket": 0
+        },
+        "fault": {
+          "effect": "full",
+          "response": "SUCCESS",
+          "visibility_delay": 0,
+          "unknown_until": 0,
+          "commit_delay": 0
+        }
+      },
+      {
+        "seq": 13,
+        "tick": 3,
+        "kind": "commit_stage",
+        "operation_id": "activate_customer-logical-42",
+        "stage": 0,
+        "key": "8484f6ea54b541df7276412c3b8d40be61a802adb5f3661633158e9a15194a11",
+        "state": {
+          "customer": {
+            "id": "synthetic-c42",
+            "status": "NEW",
+            "activated_at": null
+          }
+        }
+      },
+      {
+        "seq": 14,
+        "tick": 3,
+        "kind": "commit_stage",
+        "operation_id": "activate_customer-logical-42",
+        "stage": 1,
+        "key": "8484f6ea54b541df7276412c3b8d40be61a802adb5f3661633158e9a15194a11",
+        "state": {
+          "customer": {
+            "id": "synthetic-c42",
+            "status": "ACTIVE",
+            "activated_at": 3
+          }
+        }
+      },
+      {
+        "seq": 15,
+        "tick": 3,
+        "kind": "commit_stage",
+        "operation_id": "activate_customer-logical-42",
+        "stage": 2,
+        "key": "8484f6ea54b541df7276412c3b8d40be61a802adb5f3661633158e9a15194a11",
+        "state": {
+          "customer": {
+            "id": "synthetic-c42",
+            "status": "ACTIVE",
+            "activated_at": 3
+          },
+          "messages": [
+            {
+              "customer_id": "synthetic-c42",
+              "message": "welcome"
+            }
+          ]
+        }
+      },
+      {
+        "seq": 16,
+        "tick": 3,
+        "kind": "response_available",
+        "response": "SUCCESS"
+      },
+      {
+        "seq": 17,
+        "tick": 3,
+        "kind": "response_inspected",
+        "response": "SUCCESS"
+      },
+      {
+        "seq": 18,
+        "tick": 3,
+        "kind": "wait",
+        "ticks": 5
+      }
+    ]
+  },
+  {
+    "task": "activate_customer",
+    "mode_version": "engineering_v2",
+    "reported_success": false,
+    "safe_at_return": false,
+    "safe_final": false,
+    "calls": 1,
+    "reads": 3,
+    "return_tick": 3,
+    "at_return": {},
+    "final": {},
+    "trace": [
+      {
+        "seq": 0,
+        "tick": 0,
+        "kind": "dispatch",
+        "attempt": 1,
+        "key": "8484f6ea54b541df7276412c3b8d40be61a802adb5f3661633158e9a15194a11",
+        "action": {
+          "task": "activate_customer",
+          "payload": {
+            "customer_id": "synthetic-c42",
+            "invoice_id": "synthetic-i42",
+            "amount": 1825
+          },
+          "operation_id": "activate_customer-logical-42",
+          "agent_id": "scripted-agent",
+          "timestamp_bucket": 0
+        },
+        "fault": {
+          "effect": "none",
+          "response": "AMBIGUOUS",
+          "visibility_delay": 0,
+          "unknown_until": 3,
+          "commit_delay": 0
+        }
+      },
+      {
+        "seq": 1,
+        "tick": 0,
+        "kind": "response_available",
+        "response": "AMBIGUOUS"
+      },
+      {
+        "seq": 2,
+        "tick": 0,
+        "kind": "response_inspected",
+        "response": "AMBIGUOUS"
+      },
+      {
+        "seq": 3,
+        "tick": 0,
+        "kind": "wait",
+        "ticks": 1
+      },
+      {
+        "seq": 4,
+        "tick": 1,
+        "kind": "read",
+        "operation_id": "activate_customer-logical-42",
+        "outcome": "UNKNOWN"
+      },
+      {
+        "seq": 5,
+        "tick": 1,
+        "kind": "verification",
+        "predicate": "full",
+        "outcome": "UNKNOWN"
+      },
+      {
+        "seq": 6,
+        "tick": 1,
+        "kind": "wait",
+        "ticks": 1
+      },
+      {
+        "seq": 7,
+        "tick": 2,
+        "kind": "read",
+        "operation_id": "activate_customer-logical-42",
+        "outcome": "UNKNOWN"
+      },
+      {
+        "seq": 8,
+        "tick": 2,
+        "kind": "verification",
+        "predicate": "full",
+        "outcome": "UNKNOWN"
+      },
+      {
+        "seq": 9,
+        "tick": 2,
+        "kind": "wait",
+        "ticks": 1
+      },
+      {
+        "seq": 10,
+        "tick": 3,
+        "kind": "read",
+        "operation_id": "activate_customer-logical-42",
+        "stale": false,
+        "view": {}
+      },
+      {
+        "seq": 11,
+        "tick": 3,
+        "kind": "verification",
+        "predicate": "full",
+        "outcome": "FALSE"
+      },
+      {
+        "seq": 12,
+        "tick": 3,
+        "kind": "retry_withheld",
+        "reason": "no_post_retry_verification_capacity"
+      },
+      {
+        "seq": 13,
+        "tick": 3,
+        "kind": "wait",
+        "ticks": 5
+      }
+    ]
+  },
+  {
+    "task": "record_invoice",
+    "mode_version": "engineering_v1",
+    "reported_success": false,
+    "safe_at_return": true,
+    "safe_final": true,
+    "calls": 2,
+    "reads": 3,
+    "return_tick": 3,
+    "at_return": {
+      "row": {
+        "invoice_id": "synthetic-i42",
+        "amount": 1825
+      },
+      "records": [
+        {
+          "invoice_id": "synthetic-i42",
+          "amount": 1825,
+          "status": "RECORDED"
+        }
+      ]
+    },
+    "final": {
+      "row": {
+        "invoice_id": "synthetic-i42",
+        "amount": 1825
+      },
+      "records": [
+        {
+          "invoice_id": "synthetic-i42",
+          "amount": 1825,
+          "status": "RECORDED"
+        }
+      ]
+    },
+    "trace": [
+      {
+        "seq": 0,
+        "tick": 0,
+        "kind": "dispatch",
+        "attempt": 1,
+        "key": "5f082d17282b965b88b976d746cd83017e46d1b1c04d6a14434c48b3c291613f",
+        "action": {
+          "task": "record_invoice",
+          "payload": {
+            "customer_id": "synthetic-c42",
+            "invoice_id": "synthetic-i42",
+            "amount": 1825
+          },
+          "operation_id": "record_invoice-logical-42",
+          "agent_id": "scripted-agent",
+          "timestamp_bucket": 0
+        },
+        "fault": {
+          "effect": "none",
+          "response": "AMBIGUOUS",
+          "visibility_delay": 0,
+          "unknown_until": 3,
+          "commit_delay": 0
+        }
+      },
+      {
+        "seq": 1,
+        "tick": 0,
+        "kind": "response_available",
+        "response": "AMBIGUOUS"
+      },
+      {
+        "seq": 2,
+        "tick": 0,
+        "kind": "response_inspected",
+        "response": "AMBIGUOUS"
+      },
+      {
+        "seq": 3,
+        "tick": 0,
+        "kind": "wait",
+        "ticks": 1
+      },
+      {
+        "seq": 4,
+        "tick": 1,
+        "kind": "read",
+        "operation_id": "record_invoice-logical-42",
+        "outcome": "UNKNOWN"
+      },
+      {
+        "seq": 5,
+        "tick": 1,
+        "kind": "verification",
+        "predicate": "full",
+        "outcome": "UNKNOWN"
+      },
+      {
+        "seq": 6,
+        "tick": 1,
+        "kind": "wait",
+        "ticks": 1
+      },
+      {
+        "seq": 7,
+        "tick": 2,
+        "kind": "read",
+        "operation_id": "record_invoice-logical-42",
+        "outcome": "UNKNOWN"
+      },
+      {
+        "seq": 8,
+        "tick": 2,
+        "kind": "verification",
+        "predicate": "full",
+        "outcome": "UNKNOWN"
+      },
+      {
+        "seq": 9,
+        "tick": 2,
+        "kind": "wait",
+        "ticks": 1
+      },
+      {
+        "seq": 10,
+        "tick": 3,
+        "kind": "read",
+        "operation_id": "record_invoice-logical-42",
+        "stale": false,
+        "view": {}
+      },
+      {
+        "seq": 11,
+        "tick": 3,
+        "kind": "verification",
+        "predicate": "full",
+        "outcome": "FALSE"
+      },
+      {
+        "seq": 12,
+        "tick": 3,
+        "kind": "dispatch",
+        "attempt": 2,
+        "key": "5f082d17282b965b88b976d746cd83017e46d1b1c04d6a14434c48b3c291613f",
+        "action": {
+          "task": "record_invoice",
+          "payload": {
+            "customer_id": "synthetic-c42",
+            "invoice_id": "synthetic-i42",
+            "amount": 1825
+          },
+          "operation_id": "record_invoice-logical-42",
+          "agent_id": "scripted-agent",
+          "timestamp_bucket": 0
+        },
+        "fault": {
+          "effect": "full",
+          "response": "SUCCESS",
+          "visibility_delay": 0,
+          "unknown_until": 0,
+          "commit_delay": 0
+        }
+      },
+      {
+        "seq": 13,
+        "tick": 3,
+        "kind": "commit_stage",
+        "operation_id": "record_invoice-logical-42",
+        "stage": 0,
+        "key": "5f082d17282b965b88b976d746cd83017e46d1b1c04d6a14434c48b3c291613f",
+        "state": {
+          "row": {
+            "invoice_id": "synthetic-i42",
+            "amount": 1825
+          }
+        }
+      },
+      {
+        "seq": 14,
+        "tick": 3,
+        "kind": "commit_stage",
+        "operation_id": "record_invoice-logical-42",
+        "stage": 1,
+        "key": "5f082d17282b965b88b976d746cd83017e46d1b1c04d6a14434c48b3c291613f",
+        "state": {
+          "row": {
+            "invoice_id": "synthetic-i42",
+            "amount": 1825
+          },
+          "records": [
+            {
+              "invoice_id": "synthetic-i42",
+              "amount": 1825,
+              "status": "PENDING"
+            }
+          ]
+        }
+      },
+      {
+        "seq": 15,
+        "tick": 3,
+        "kind": "commit_stage",
+        "operation_id": "record_invoice-logical-42",
+        "stage": 2,
+        "key": "5f082d17282b965b88b976d746cd83017e46d1b1c04d6a14434c48b3c291613f",
+        "state": {
+          "row": {
+            "invoice_id": "synthetic-i42",
+            "amount": 1825
+          },
+          "records": [
+            {
+              "invoice_id": "synthetic-i42",
+              "amount": 1825,
+              "status": "RECORDED"
+            }
+          ]
+        }
+      },
+      {
+        "seq": 16,
+        "tick": 3,
+        "kind": "response_available",
+        "response": "SUCCESS"
+      },
+      {
+        "seq": 17,
+        "tick": 3,
+        "kind": "response_inspected",
+        "response": "SUCCESS"
+      },
+      {
+        "seq": 18,
+        "tick": 3,
+        "kind": "wait",
+        "ticks": 5
+      }
+    ]
+  },
+  {
+    "task": "record_invoice",
+    "mode_version": "engineering_v2",
+    "reported_success": false,
+    "safe_at_return": false,
+    "safe_final": false,
+    "calls": 1,
+    "reads": 3,
+    "return_tick": 3,
+    "at_return": {},
+    "final": {},
+    "trace": [
+      {
+        "seq": 0,
+        "tick": 0,
+        "kind": "dispatch",
+        "attempt": 1,
+        "key": "5f082d17282b965b88b976d746cd83017e46d1b1c04d6a14434c48b3c291613f",
+        "action": {
+          "task": "record_invoice",
+          "payload": {
+            "customer_id": "synthetic-c42",
+            "invoice_id": "synthetic-i42",
+            "amount": 1825
+          },
+          "operation_id": "record_invoice-logical-42",
+          "agent_id": "scripted-agent",
+          "timestamp_bucket": 0
+        },
+        "fault": {
+          "effect": "none",
+          "response": "AMBIGUOUS",
+          "visibility_delay": 0,
+          "unknown_until": 3,
+          "commit_delay": 0
+        }
+      },
+      {
+        "seq": 1,
+        "tick": 0,
+        "kind": "response_available",
+        "response": "AMBIGUOUS"
+      },
+      {
+        "seq": 2,
+        "tick": 0,
+        "kind": "response_inspected",
+        "response": "AMBIGUOUS"
+      },
+      {
+        "seq": 3,
+        "tick": 0,
+        "kind": "wait",
+        "ticks": 1
+      },
+      {
+        "seq": 4,
+        "tick": 1,
+        "kind": "read",
+        "operation_id": "record_invoice-logical-42",
+        "outcome": "UNKNOWN"
+      },
+      {
+        "seq": 5,
+        "tick": 1,
+        "kind": "verification",
+        "predicate": "full",
+        "outcome": "UNKNOWN"
+      },
+      {
+        "seq": 6,
+        "tick": 1,
+        "kind": "wait",
+        "ticks": 1
+      },
+      {
+        "seq": 7,
+        "tick": 2,
+        "kind": "read",
+        "operation_id": "record_invoice-logical-42",
+        "outcome": "UNKNOWN"
+      },
+      {
+        "seq": 8,
+        "tick": 2,
+        "kind": "verification",
+        "predicate": "full",
+        "outcome": "UNKNOWN"
+      },
+      {
+        "seq": 9,
+        "tick": 2,
+        "kind": "wait",
+        "ticks": 1
+      },
+      {
+        "seq": 10,
+        "tick": 3,
+        "kind": "read",
+        "operation_id": "record_invoice-logical-42",
+        "stale": false,
+        "view": {}
+      },
+      {
+        "seq": 11,
+        "tick": 3,
+        "kind": "verification",
+        "predicate": "full",
+        "outcome": "FALSE"
+      },
+      {
+        "seq": 12,
+        "tick": 3,
+        "kind": "retry_withheld",
+        "reason": "no_post_retry_verification_capacity"
+      },
+      {
+        "seq": 13,
+        "tick": 3,
+        "kind": "wait",
+        "ticks": 5
+      }
+    ]
+  }
+]

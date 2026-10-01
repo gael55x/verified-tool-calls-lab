@@ -1,0 +1,19 @@
+%% Original diagram from retained case:
+%% stress/record_invoice/delayed_commit/42/unsupported/engineering
+sequenceDiagram
+    participant W as Engineering wrapper
+    participant A as API ignoring keys
+    participant V as Visible state
+    W->>A: First invoice request
+    A-->>W: AMBIGUOUS; commit scheduled for tick 2
+    Note over W: Tick 1
+    W->>V: Read full postcondition
+    V-->>W: FALSE; first request has not committed
+    W->>A: Retry with same key
+    A->>A: Retry commits first record at tick 1
+    A-->>W: SUCCESS
+    W->>V: Check full task again
+    V-->>W: TRUE; exactly one recorded invoice
+    Note over W: Return success at tick 1
+    Note over A: Tick 2; first request commits another record
+    Note over V: Tick 8 evaluator: two committed records; safe completion fails

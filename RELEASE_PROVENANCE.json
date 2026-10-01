@@ -1,0 +1,42 @@
+{
+  "authenticated_identity": "gael55x; verified by parent through connected Chrome",
+  "clean_history": true,
+  "current_engineering_version": "v2-reserved-verification",
+  "current_evaluated_revision": "e64c0305b27afc5269d6eef75a50ebad6fe046d2",
+  "current_measured_sources_match": true,
+  "current_results_manifest_sha256": "bb2dfde34a366102f3a0c43b9ef2ebbf3b695459df9cb53f503be38eca3a4ba3",
+  "current_source_manifest": {
+    "PROTOCOL.md": "2ba3d4d87898c51dba18980cf4cf7488215bb7965b2ad671cb40a38fd75bd4dc",
+    "PROTOCOL_AMENDMENT_002.md": "7db2fc5d42f79c58453fd2aaea709d4c3049762f55ab81336de7965a83d4a1d5",
+    "tests/test_mechanism.py": "aabe77b9c7d532739e0e35969c97c40aa7631c38be3b3db95ed3b417a89ab0f8",
+    "vtc/__init__.py": "cf22e97a0b3ef9d417374d24bc76badccc3232c0860141ccd43ed9bb38ffd99e",
+    "vtc/audit.py": "e1b3647e39e215a688f96b80940c0f9905d5eca4868325e28ec5e296e141901e",
+    "vtc/compare.py": "77e353aea8770ff3b004bb79ab6121b76ca7c9afa2a92dac05a37109e8ec0a22",
+    "vtc/evaluate.py": "a167af3eb33ccbf7c520e10973c218908cfe3e31ff656e2c64859bf5812d6a6f",
+    "vtc/model.py": "657cd05c60757f57244ade0c0923ae9b470585e609e4a1dfff8a8fd12f1429d3",
+    "vtc/wrappers.py": "e95b176a3eb01b9cc37c131f324a377c3dce5b1ed5f3535ec8f462f07b6c0064"
+  },
+  "development_archive_revision": "13849788800b599fa814d14bea2e92cba39011d0",
+  "development_evaluated_revision": "0a30de840b7841110bb758aa835340feeb00d9fa",
+  "identity_verification_source": "parent-delegation; no credential/account changes by this task",
+  "independent_technical_review": "CORRECTION RE-REVIEW PENDING",
+  "intended_github_account": "gael55x",
+  "measurement_sources_copied_byte_identically": true,
+  "medium_draft_excluded": true,
+  "original_independent_review": "PASS",
+  "original_results_manifest_sha256": "d92f3654057ca68b3cbe3f6e5096ad5e994b70198686c93f338dc0b2db26c28b",
+  "original_source_manifest": {
+    "PROTOCOL.md": "2ba3d4d87898c51dba18980cf4cf7488215bb7965b2ad671cb40a38fd75bd4dc",
+    "tests/test_mechanism.py": "257e779d41df1347f746dc313513057e22224592db0b2f324a4a75cca2db4ee5",
+    "vtc/__init__.py": "cf22e97a0b3ef9d417374d24bc76badccc3232c0860141ccd43ed9bb38ffd99e",
+    "vtc/audit.py": "e1b3647e39e215a688f96b80940c0f9905d5eca4868325e28ec5e296e141901e",
+    "vtc/compare.py": "77e353aea8770ff3b004bb79ab6121b76ca7c9afa2a92dac05a37109e8ec0a22",
+    "vtc/evaluate.py": "cf739560fa6a7dab474ed5a28290e161a1caf6c5664eb9be8de8292c27afbab0",
+    "vtc/model.py": "657cd05c60757f57244ade0c0923ae9b470585e609e4a1dfff8a8fd12f1429d3",
+    "vtc/wrappers.py": "ab330b2a4c8320595eaa14c364e38f433ff48176d58bbff53af7c0dc5bd7043f"
+  },
+  "private_provenance_reference": "evidence/provenance-reference.json (bundle excluded)",
+  "protocol_revision": "3e12355bff34e089b88af72bab7dda24aea5f5f2",
+  "public_release": "NOT PUSHED",
+  "scientific_artifacts_copied_byte_identically": true
+}

@@ -1,0 +1,93 @@
+{
+  "checked_on": "2026-10-01",
+  "confidence": "moderate",
+  "records": [
+    {
+      "url": "https://arxiv.org/html/2608.02645v1",
+      "file": "paper.html",
+      "checked_at_utc": "2026-10-01T08:08:16.316713+00:00",
+      "status": 200,
+      "bytes": 147648
+    },
+    {
+      "url": "https://arxiv.org/pdf/2608.02645v1",
+      "file": "paper.pdf",
+      "checked_at_utc": "2026-10-01T08:08:16.942256+00:00",
+      "status": 200,
+      "bytes": 428545
+    },
+    {
+      "url": "https://api.github.com/search/repositories?q=2608.02645",
+      "file": "github-id.json",
+      "checked_at_utc": "2026-10-01T08:08:21.012829+00:00",
+      "status": 200,
+      "bytes": 55,
+      "result": 0
+    },
+    {
+      "url": "https://api.github.com/search/repositories?q=%22Verified%20Tool%20Calls%22",
+      "file": "github-title.json",
+      "checked_at_utc": "2026-10-01T08:08:21.771823+00:00",
+      "status": 200,
+      "bytes": 57006,
+      "result": 10
+    },
+    {
+      "url": "https://api.github.com/users/abhishekphadke/repos?per_page=100",
+      "file": "author-repos.json",
+      "checked_at_utc": "2026-10-01T08:08:22.944621+00:00",
+      "status": 200,
+      "bytes": 161104,
+      "result": [
+        "abhishekphadke.github.io",
+        "cnu-apcs-thesis-template",
+        "CoDroneEDU-app",
+        "dijkstras-algorithm",
+        "dissertationData",
+        "evaluation-L4S-NQB-arch-Comcast-Innovate",
+        "FAA-UAV-aircraft-inspection",
+        "FE-EE-testPrep",
+        "GARA-EB1-scam-exhibits",
+        "Heterogeneous-swarm-capture-planning",
+        "hypothesis-testing",
+        "Hypothesis_COVID_Texas",
+        "iOS-applications",
+        "language-model-game-data-extraction",
+        "MOUSE",
+        "Optimization-using-Gurobi",
+        "radar-centric-occupant-sensing",
+        "SimulationScenes",
+        "swarmCurrentTrends-dataset",
+        "SwarmFly",
+        "synthetic-LiDARdata-coppeliaSim",
+        "Texas-A-M-Kingsville-application",
+        "tideLeveVisualization",
+        "UAV-Swarm-Resiliency-Bibliographic-Data",
+        "uavRPYvisualizer",
+        "UTSim-update",
+        "vehicularRobotics-sampleSyllabus"
+      ]
+    },
+    {
+      "url": "https://api.github.com/search/repositories?q=%22Verified%20Tool%20Calls%20Improve%20LLM%20Agent%20Reliability%20Under%20Non-Atomic%20Failures%22",
+      "checked_at_utc": "2026-10-01T08:09:33.365291+00:00",
+      "status": 200,
+      "bytes": 55,
+      "total_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/MkaliezZ/dhms-engine/main/README.md",
+      "checked_at_utc": "2026-10-01T08:09:34.097723+00:00",
+      "status": 200,
+      "bytes": 3400
+    },
+    {
+      "url": "https://github.com/abhishekphadke",
+      "checked_at_utc": "2026-10-01T08:09:34.850598+00:00",
+      "status": 200,
+      "bytes": 207554
+    }
+  ],
+  "author_public_repo_count": 27,
+  "raw_source_snapshots": "retained in private research checkout, excluded from clean history"
+}

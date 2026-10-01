@@ -1,0 +1,20 @@
+{
+  "checks": "hashes, matrix, states, commits, keys, tape pairing, controls, aggregates",
+  "episodes": 2160,
+  "independent_editorial_review": "PENDING",
+  "independent_review": false,
+  "independent_technical_review": "PENDING",
+  "paid_model_calls": false,
+  "paired_input_families": 270,
+  "report_arithmetic": "PASS: interval, paired counts and call/read/write/tick totals independently recalculated",
+  "rerun": {
+    "assertions.jsonl": "a406c48c965ac8d4081b214cc0854460a9c36e81d3508da3df0dbb8a3eb9321a",
+    "cases.csv": "2670b49ccd124a2abad9968fee351a13c8f571f6ebb39cad4428785b995459c8",
+    "inputs.json": "e9cfae4e0fe6ed512204b97c16a3e483c530b7928b0eef3dc1d998af613fc2ce",
+    "summary.json": "6ab123e79df9f156b0d82aeaf78cfe7bc1dd7db52ceda66286191a065042d302",
+    "traces.jsonl": "95cd5db37e6cc3eafe80cfcd28e0927e45361d7299aec9bdb381b9996c55f2c6"
+  },
+  "source_revision": "0a30de840b7841110bb758aa835340feeb00d9fa",
+  "status": "PASS",
+  "tests": 23
+}

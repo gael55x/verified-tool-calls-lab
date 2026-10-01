@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+repro-output/
+.DS_Store
+
+# Private archive/draft material must never enter this public candidate
+article/DRAFT.md
+research/*.html
+research/*.pdf
+research/author-repos.json
+research/*readme*
+research/web-search-receipt.txt

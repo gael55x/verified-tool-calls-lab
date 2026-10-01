@@ -1,0 +1,13 @@
+{
+  "check": "documented version/auth status only",
+  "paid_call": false,
+  "cli_found": true,
+  "version": {
+    "exit_code": 0,
+    "text": "2.1.285 (Claude Code)"
+  },
+  "auth_status": {
+    "exit_code": 1,
+    "text": "Not logged in. Run claude auth login to authenticate."
+  }
+}

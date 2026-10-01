@@ -1,0 +1,32 @@
+{
+  "aggregate_improvement_claimed": false,
+  "checks": "hashes, matrix, states, commits, keys, tape pairing, controls, aggregates",
+  "claude_calls_in_this_task": 0,
+  "diagram_assets": "editable Mermaid sources included; rendering/integration owned by separate parent-coordinated task",
+  "engineering_version": "v2-reserved-verification",
+  "episodes": 2160,
+  "evaluated_revision": "e64c0305b27afc5269d6eef75a50ebad6fe046d2",
+  "independent_correction_review": "PENDING",
+  "independent_original_review": "PASS as reported by parent",
+  "independent_review": false,
+  "literal_mode_ast_unchanged": true,
+  "original_results_preserved": true,
+  "original_scientific_sha256": {
+    "assertions.jsonl": "a406c48c965ac8d4081b214cc0854460a9c36e81d3508da3df0dbb8a3eb9321a",
+    "cases.csv": "2670b49ccd124a2abad9968fee351a13c8f571f6ebb39cad4428785b995459c8",
+    "inputs.json": "e9cfae4e0fe6ed512204b97c16a3e483c530b7928b0eef3dc1d998af613fc2ce",
+    "summary.json": "6ab123e79df9f156b0d82aeaf78cfe7bc1dd7db52ceda66286191a065042d302",
+    "traces.jsonl": "95cd5db37e6cc3eafe80cfcd28e0927e45361d7299aec9bdb381b9996c55f2c6"
+  },
+  "paired_input_families": 270,
+  "rerun_scientific_sha256": {
+    "assertions.jsonl": "a406c48c965ac8d4081b214cc0854460a9c36e81d3508da3df0dbb8a3eb9321a",
+    "cases.csv": "2670b49ccd124a2abad9968fee351a13c8f571f6ebb39cad4428785b995459c8",
+    "inputs.json": "e9cfae4e0fe6ed512204b97c16a3e483c530b7928b0eef3dc1d998af613fc2ce",
+    "summary.json": "6ab123e79df9f156b0d82aeaf78cfe7bc1dd7db52ceda66286191a065042d302",
+    "traces.jsonl": "95cd5db37e6cc3eafe80cfcd28e0927e45361d7299aec9bdb381b9996c55f2c6"
+  },
+  "source_hashes_match": true,
+  "status": "PASS",
+  "tests_passed": 26
+}

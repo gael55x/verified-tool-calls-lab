@@ -1,0 +1,11 @@
+{
+  "sha256": {
+    "assertions.jsonl": "a406c48c965ac8d4081b214cc0854460a9c36e81d3508da3df0dbb8a3eb9321a",
+    "cases.csv": "2670b49ccd124a2abad9968fee351a13c8f571f6ebb39cad4428785b995459c8",
+    "inputs.json": "e9cfae4e0fe6ed512204b97c16a3e483c530b7928b0eef3dc1d998af613fc2ce",
+    "run_manifest.json": "33d49501a73a68fff7fd61a8361c6aa490b272c05b7686ec4c34f253b26bb88e",
+    "summary.json": "6ab123e79df9f156b0d82aeaf78cfe7bc1dd7db52ceda66286191a065042d302",
+    "traces.jsonl": "95cd5db37e6cc3eafe80cfcd28e0927e45361d7299aec9bdb381b9996c55f2c6"
+  },
+  "source_revision": "e64c0305b27afc5269d6eef75a50ebad6fe046d2"
+}

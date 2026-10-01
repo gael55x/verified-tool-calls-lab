@@ -1,0 +1,15 @@
+{
+  "private_bundle_name": "provenance-original-through-1384978.bundle",
+  "sha256": "351fa136c69b94283eec49909bbd055d00e54078667c85fdeaf865ad2bccd406",
+  "git_bundle_verify": "PASS",
+  "ancestry_checks": "PASS",
+  "contains_complete_original_history": true,
+  "chain": [
+    "3e12355bff34e089b88af72bab7dda24aea5f5f2",
+    "0a30de840b7841110bb758aa835340feeb00d9fa",
+    "13849788800b599fa814d14bea2e92cba39011d0"
+  ],
+  "public_bundle_included": false,
+  "independent_provenance_review": "PASS as reported by parent; reviewer task 01a0f6a7-22f0-76eb-ab88-274c8bd1f02f",
+  "claim": "locally predeclared before the implementation commit; not externally timestamped/public preregistration"
+}

@@ -1,0 +1,5152 @@
+{
+  "groups": [
+    {
+      "calls_sum": 188,
+      "condition": "all",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 2,
+        "rate": 0.013333,
+        "wilson95_descriptive": [
+          0.003664,
+          0.047307
+        ]
+      },
+      "false_success_final": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95_descriptive": [
+          0.0,
+          0.02497
+        ]
+      },
+      "latency_ticks_sum": 84,
+      "mode": "engineering",
+      "n": 150,
+      "profile": "supported",
+      "reads_sum": 204,
+      "reported_success": {
+        "count": 142,
+        "rate": 0.946667,
+        "wilson95_descriptive": [
+          0.898296,
+          0.97273
+        ]
+      },
+      "safe_final": {
+        "count": 144,
+        "rate": 0.96,
+        "wilson95_descriptive": [
+          0.915487,
+          0.981541
+        ]
+      },
+      "suite": "main",
+      "truth_final": {
+        "count": 144,
+        "rate": 0.96,
+        "wilson95_descriptive": [
+          0.915487,
+          0.981541
+        ]
+      },
+      "writes_final_sum": 436
+    },
+    {
+      "calls_sum": 72,
+      "condition": "high",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 2,
+        "rate": 0.04,
+        "wilson95_descriptive": [
+          0.011039,
+          0.134601
+        ]
+      },
+      "false_success_final": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95_descriptive": [
+          0.0,
+          0.071348
+        ]
+      },
+      "latency_ticks_sum": 46,
+      "mode": "engineering",
+      "n": 50,
+      "profile": "supported",
+      "reads_sum": 78,
+      "reported_success": {
+        "count": 44,
+        "rate": 0.88,
+        "wilson95_descriptive": [
+          0.761952,
+          0.943824
+        ]
+      },
+      "safe_final": {
+        "count": 46,
+        "rate": 0.92,
+        "wilson95_descriptive": [
+          0.811618,
+          0.96845
+        ]
+      },
+      "suite": "main",
+      "truth_final": {
+        "count": 46,
+        "rate": 0.92,
+        "wilson95_descriptive": [
+          0.811618,
+          0.96845
+        ]
+      },
+      "writes_final_sum": 142
+    },
+    {
+      "calls_sum": 54,
+      "condition": "low",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95_descriptive": [
+          0.0,
+          0.071348
+        ]
+      },
+      "false_success_final": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95_descriptive": [
+          0.0,
+          0.071348
+        ]
+      },
+      "latency_ticks_sum": 8,
+      "mode": "engineering",
+      "n": 50,
+      "profile": "supported",
+      "reads_sum": 56,
+      "reported_success": {
+        "count": 50,
+        "rate": 1.0,
+        "wilson95_descriptive": [
+          0.928652,
+          1.0
+        ]
+      },
+      "safe_final": {
+        "count": 50,
+        "rate": 1.0,
+        "wilson95_descriptive": [
+          0.928652,
+          1.0
+        ]
+      },
+      "suite": "main",
+      "truth_final": {
+        "count": 50,
+        "rate": 1.0,
+        "wilson95_descriptive": [
+          0.928652,
+          1.0
+        ]
+      },
+      "writes_final_sum": 150
+    },
+    {
+      "calls_sum": 62,
+      "condition": "medium",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95_descriptive": [
+          0.0,
+          0.071348
+        ]
+      },
+      "false_success_final": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95_descriptive": [
+          0.0,
+          0.071348
+        ]
+      },
+      "latency_ticks_sum": 30,
+      "mode": "engineering",
+      "n": 50,
+      "profile": "supported",
+      "reads_sum": 70,
+      "reported_success": {
+        "count": 48,
+        "rate": 0.96,
+        "wilson95_descriptive": [
+          0.865399,
+          0.988961
+        ]
+      },
+      "safe_final": {
+        "count": 48,
+        "rate": 0.96,
+        "wilson95_descriptive": [
+          0.865399,
+          0.988961
+        ]
+      },
+      "suite": "main",
+      "truth_final": {
+        "count": 48,
+        "rate": 0.96,
+        "wilson95_descriptive": [
+          0.865399,
+          0.988961
+        ]
+      },
+      "writes_final_sum": 144
+    },
+    {
+      "calls_sum": 172,
+      "condition": "all",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 22,
+        "rate": 0.146667,
+        "wilson95_descriptive": [
+          0.098894,
+          0.212085
+        ]
+      },
+      "false_success_final": {
+        "count": 16,
+        "rate": 0.106667,
+        "wilson95_descriptive": [
+          0.06673,
+          0.166246
+        ]
+      },
+      "latency_ticks_sum": 52,
+      "mode": "paper_literal",
+      "n": 150,
+      "profile": "supported",
+      "reads_sum": 52,
+      "reported_success": {
+        "count": 124,
+        "rate": 0.826667,
+        "wilson95_descriptive": [
+          0.75814,
+          0.878879
+        ]
+      },
+      "safe_final": {
+        "count": 130,
+        "rate": 0.866667,
+        "wilson95_descriptive": [
+          0.80302,
+          0.912002
+        ]
+      },
+      "suite": "main",
+      "truth_final": {
+        "count": 130,
+        "rate": 0.866667,
+        "wilson95_descriptive": [
+          0.80302,
+          0.912002
+        ]
+      },
+      "writes_final_sum": 422
+    },
+    {
+      "calls_sum": 62,
+      "condition": "high",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 12,
+        "rate": 0.24,
+        "wilson95_descriptive": [
+          0.142974,
+          0.374127
+        ]
+      },
+      "false_success_final": {
+        "count": 10,
+        "rate": 0.2,
+        "wilson95_descriptive": [
+          0.112438,
+          0.330371
+        ]
+      },
+      "latency_ticks_sum": 28,
+      "mode": "paper_literal",
+      "n": 50,
+      "profile": "supported",
+      "reads_sum": 28,
+      "reported_success": {
+        "count": 36,
+        "rate": 0.72,
+        "wilson95_descriptive": [
+          0.583349,
+          0.825258
+        ]
+      },
+      "safe_final": {
+        "count": 38,
+        "rate": 0.76,
+        "wilson95_descriptive": [
+          0.625873,
+          0.857026
+        ]
+      },
+      "suite": "main",
+      "truth_final": {
+        "count": 38,
+        "rate": 0.76,
+        "wilson95_descriptive": [
+          0.625873,
+          0.857026
+        ]
+      },
+      "writes_final_sum": 134
+    },
+    {
+      "calls_sum": 52,
+      "condition": "low",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 2,
+        "rate": 0.04,
+        "wilson95_descriptive": [
+          0.011039,
+          0.134601
+        ]
+      },
+      "false_success_final": {
+        "count": 2,
+        "rate": 0.04,
+        "wilson95_descriptive": [
+          0.011039,
+          0.134601
+        ]
+      },
+      "latency_ticks_sum": 6,
+      "mode": "paper_literal",
+      "n": 50,
+      "profile": "supported",
+      "reads_sum": 6,
+      "reported_success": {
+        "count": 48,
+        "rate": 0.96,
+        "wilson95_descriptive": [
+          0.865399,
+          0.988961
+        ]
+      },
+      "safe_final": {
+        "count": 48,
+        "rate": 0.96,
+        "wilson95_descriptive": [
+          0.865399,
+          0.988961
+        ]
+      },
+      "suite": "main",
+      "truth_final": {
+        "count": 48,
+        "rate": 0.96,
+        "wilson95_descriptive": [
+          0.865399,
+          0.988961
+        ]
+      },
+      "writes_final_sum": 148
+    },
+    {
+      "calls_sum": 58,
+      "condition": "medium",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 8,
+        "rate": 0.16,
+        "wilson95_descriptive": [
+          0.083374,
+          0.285142
+        ]
+      },
+      "false_success_final": {
+        "count": 4,
+        "rate": 0.08,
+        "wilson95_descriptive": [
+          0.03155,
+          0.188382
+        ]
+      },
+      "latency_ticks_sum": 18,
+      "mode": "paper_literal",
+      "n": 50,
+      "profile": "supported",
+      "reads_sum": 18,
+      "reported_success": {
+        "count": 40,
+        "rate": 0.8,
+        "wilson95_descriptive": [
+          0.669629,
+          0.887562
+        ]
+      },
+      "safe_final": {
+        "count": 44,
+        "rate": 0.88,
+        "wilson95_descriptive": [
+          0.761952,
+          0.943824
+        ]
+      },
+      "suite": "main",
+      "truth_final": {
+        "count": 44,
+        "rate": 0.88,
+        "wilson95_descriptive": [
+          0.761952,
+          0.943824
+        ]
+      },
+      "writes_final_sum": 140
+    },
+    {
+      "calls_sum": 206,
+      "condition": "all",
+      "duplicate_effects_sum": 42,
+      "duplicate_episodes": 42,
+      "false_failure_final": {
+        "count": 4,
+        "rate": 0.026667,
+        "wilson95_descriptive": [
+          0.010418,
+          0.066554
+        ]
+      },
+      "false_success_final": {
+        "count": 33,
+        "rate": 0.22,
+        "wilson95_descriptive": [
+          0.16116,
+          0.292823
+        ]
+      },
+      "latency_ticks_sum": 0,
+      "mode": "retry_only",
+      "n": 150,
+      "profile": "supported",
+      "reads_sum": 0,
+      "reported_success": {
+        "count": 130,
+        "rate": 0.866667,
+        "wilson95_descriptive": [
+          0.80302,
+          0.912002
+        ]
+      },
+      "safe_final": {
+        "count": 101,
+        "rate": 0.673333,
+        "wilson95_descriptive": [
+          0.594769,
+          0.743242
+        ]
+      },
+      "suite": "main",
+      "truth_final": {
+        "count": 125,
+        "rate": 0.833333,
+        "wilson95_descriptive": [
+          0.765534,
+          0.884486
+        ]
+      },
+      "writes_final_sum": 568
+    },
+    {
+      "calls_sum": 80,
+      "condition": "high",
+      "duplicate_effects_sum": 21,
+      "duplicate_episodes": 21,
+      "false_failure_final": {
+        "count": 3,
+        "rate": 0.06,
+        "wilson95_descriptive": [
+          0.020615,
+          0.162171
+        ]
+      },
+      "false_success_final": {
+        "count": 11,
+        "rate": 0.22,
+        "wilson95_descriptive": [
+          0.127539,
+          0.352415
+        ]
+      },
+      "latency_ticks_sum": 0,
+      "mode": "retry_only",
+      "n": 50,
+      "profile": "supported",
+      "reads_sum": 0,
+      "reported_success": {
+        "count": 34,
+        "rate": 0.68,
+        "wilson95_descriptive": [
+          0.541897,
+          0.792418
+        ]
+      },
+      "safe_final": {
+        "count": 26,
+        "rate": 0.52,
+        "wilson95_descriptive": [
+          0.385117,
+          0.652029
+        ]
+      },
+      "suite": "main",
+      "truth_final": {
+        "count": 38,
+        "rate": 0.76,
+        "wilson95_descriptive": [
+          0.625873,
+          0.857026
+        ]
+      },
+      "writes_final_sum": 210
+    },
+    {
+      "calls_sum": 56,
+      "condition": "low",
+      "duplicate_effects_sum": 5,
+      "duplicate_episodes": 5,
+      "false_failure_final": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95_descriptive": [
+          0.0,
+          0.071348
+        ]
+      },
+      "false_success_final": {
+        "count": 5,
+        "rate": 0.1,
+        "wilson95_descriptive": [
+          0.043476,
+          0.213602
+        ]
+      },
+      "latency_ticks_sum": 0,
+      "mode": "retry_only",
+      "n": 50,
+      "profile": "supported",
+      "reads_sum": 0,
+      "reported_success": {
+        "count": 50,
+        "rate": 1.0,
+        "wilson95_descriptive": [
+          0.928652,
+          1.0
+        ]
+      },
+      "safe_final": {
+        "count": 45,
+        "rate": 0.9,
+        "wilson95_descriptive": [
+          0.786398,
+          0.956524
+        ]
+      },
+      "suite": "main",
+      "truth_final": {
+        "count": 48,
+        "rate": 0.96,
+        "wilson95_descriptive": [
+          0.865399,
+          0.988961
+        ]
+      },
+      "writes_final_sum": 166
+    },
+    {
+      "calls_sum": 70,
+      "condition": "medium",
+      "duplicate_effects_sum": 16,
+      "duplicate_episodes": 16,
+      "false_failure_final": {
+        "count": 1,
+        "rate": 0.02,
+        "wilson95_descriptive": [
+          0.003539,
+          0.104954
+        ]
+      },
+      "false_success_final": {
+        "count": 17,
+        "rate": 0.34,
+        "wilson95_descriptive": [
+          0.224369,
+          0.478462
+        ]
+      },
+      "latency_ticks_sum": 0,
+      "mode": "retry_only",
+      "n": 50,
+      "profile": "supported",
+      "reads_sum": 0,
+      "reported_success": {
+        "count": 46,
+        "rate": 0.92,
+        "wilson95_descriptive": [
+          0.811618,
+          0.96845
+        ]
+      },
+      "safe_final": {
+        "count": 30,
+        "rate": 0.6,
+        "wilson95_descriptive": [
+          0.461814,
+          0.723916
+        ]
+      },
+      "suite": "main",
+      "truth_final": {
+        "count": 39,
+        "rate": 0.78,
+        "wilson95_descriptive": [
+          0.647585,
+          0.872461
+        ]
+      },
+      "writes_final_sum": 192
+    },
+    {
+      "calls_sum": 150,
+      "condition": "all",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 22,
+        "rate": 0.146667,
+        "wilson95_descriptive": [
+          0.098894,
+          0.212085
+        ]
+      },
+      "false_success_final": {
+        "count": 16,
+        "rate": 0.106667,
+        "wilson95_descriptive": [
+          0.06673,
+          0.166246
+        ]
+      },
+      "latency_ticks_sum": 52,
+      "mode": "verify_only",
+      "n": 150,
+      "profile": "supported",
+      "reads_sum": 52,
+      "reported_success": {
+        "count": 124,
+        "rate": 0.826667,
+        "wilson95_descriptive": [
+          0.75814,
+          0.878879
+        ]
+      },
+      "safe_final": {
+        "count": 130,
+        "rate": 0.866667,
+        "wilson95_descriptive": [
+          0.80302,
+          0.912002
+        ]
+      },
+      "suite": "main",
+      "truth_final": {
+        "count": 130,
+        "rate": 0.866667,
+        "wilson95_descriptive": [
+          0.80302,
+          0.912002
+        ]
+      },
+      "writes_final_sum": 422
+    },
+    {
+      "calls_sum": 50,
+      "condition": "high",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 12,
+        "rate": 0.24,
+        "wilson95_descriptive": [
+          0.142974,
+          0.374127
+        ]
+      },
+      "false_success_final": {
+        "count": 10,
+        "rate": 0.2,
+        "wilson95_descriptive": [
+          0.112438,
+          0.330371
+        ]
+      },
+      "latency_ticks_sum": 28,
+      "mode": "verify_only",
+      "n": 50,
+      "profile": "supported",
+      "reads_sum": 28,
+      "reported_success": {
+        "count": 36,
+        "rate": 0.72,
+        "wilson95_descriptive": [
+          0.583349,
+          0.825258
+        ]
+      },
+      "safe_final": {
+        "count": 38,
+        "rate": 0.76,
+        "wilson95_descriptive": [
+          0.625873,
+          0.857026
+        ]
+      },
+      "suite": "main",
+      "truth_final": {
+        "count": 38,
+        "rate": 0.76,
+        "wilson95_descriptive": [
+          0.625873,
+          0.857026
+        ]
+      },
+      "writes_final_sum": 134
+    },
+    {
+      "calls_sum": 50,
+      "condition": "low",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 2,
+        "rate": 0.04,
+        "wilson95_descriptive": [
+          0.011039,
+          0.134601
+        ]
+      },
+      "false_success_final": {
+        "count": 2,
+        "rate": 0.04,
+        "wilson95_descriptive": [
+          0.011039,
+          0.134601
+        ]
+      },
+      "latency_ticks_sum": 6,
+      "mode": "verify_only",
+      "n": 50,
+      "profile": "supported",
+      "reads_sum": 6,
+      "reported_success": {
+        "count": 48,
+        "rate": 0.96,
+        "wilson95_descriptive": [
+          0.865399,
+          0.988961
+        ]
+      },
+      "safe_final": {
+        "count": 48,
+        "rate": 0.96,
+        "wilson95_descriptive": [
+          0.865399,
+          0.988961
+        ]
+      },
+      "suite": "main",
+      "truth_final": {
+        "count": 48,
+        "rate": 0.96,
+        "wilson95_descriptive": [
+          0.865399,
+          0.988961
+        ]
+      },
+      "writes_final_sum": 148
+    },
+    {
+      "calls_sum": 50,
+      "condition": "medium",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 8,
+        "rate": 0.16,
+        "wilson95_descriptive": [
+          0.083374,
+          0.285142
+        ]
+      },
+      "false_success_final": {
+        "count": 4,
+        "rate": 0.08,
+        "wilson95_descriptive": [
+          0.03155,
+          0.188382
+        ]
+      },
+      "latency_ticks_sum": 18,
+      "mode": "verify_only",
+      "n": 50,
+      "profile": "supported",
+      "reads_sum": 18,
+      "reported_success": {
+        "count": 40,
+        "rate": 0.8,
+        "wilson95_descriptive": [
+          0.669629,
+          0.887562
+        ]
+      },
+      "safe_final": {
+        "count": 44,
+        "rate": 0.88,
+        "wilson95_descriptive": [
+          0.761952,
+          0.943824
+        ]
+      },
+      "suite": "main",
+      "truth_final": {
+        "count": 44,
+        "rate": 0.88,
+        "wilson95_descriptive": [
+          0.761952,
+          0.943824
+        ]
+      },
+      "writes_final_sum": 140
+    },
+    {
+      "calls_sum": 188,
+      "condition": "all",
+      "duplicate_effects_sum": 28,
+      "duplicate_episodes": 28,
+      "false_failure_final": {
+        "count": 2,
+        "rate": 0.013333,
+        "wilson95_descriptive": [
+          0.003664,
+          0.047307
+        ]
+      },
+      "false_success_final": {
+        "count": 2,
+        "rate": 0.013333,
+        "wilson95_descriptive": [
+          0.003664,
+          0.047307
+        ]
+      },
+      "latency_ticks_sum": 91,
+      "mode": "engineering",
+      "n": 150,
+      "profile": "unsupported",
+      "reads_sum": 211,
+      "reported_success": {
+        "count": 117,
+        "rate": 0.78,
+        "wilson95_descriptive": [
+          0.707177,
+          0.83884
+        ]
+      },
+      "safe_final": {
+        "count": 117,
+        "rate": 0.78,
+        "wilson95_descriptive": [
+          0.707177,
+          0.83884
+        ]
+      },
+      "suite": "main",
+      "truth_final": {
+        "count": 134,
+        "rate": 0.893333,
+        "wilson95_descriptive": [
+          0.833754,
+          0.93327
+        ]
+      },
+      "writes_final_sum": 528
+    },
+    {
+      "calls_sum": 72,
+      "condition": "high",
+      "duplicate_effects_sum": 15,
+      "duplicate_episodes": 15,
+      "false_failure_final": {
+        "count": 2,
+        "rate": 0.04,
+        "wilson95_descriptive": [
+          0.011039,
+          0.134601
+        ]
+      },
+      "false_success_final": {
+        "count": 2,
+        "rate": 0.04,
+        "wilson95_descriptive": [
+          0.011039,
+          0.134601
+        ]
+      },
+      "latency_ticks_sum": 51,
+      "mode": "engineering",
+      "n": 50,
+      "profile": "unsupported",
+      "reads_sum": 83,
+      "reported_success": {
+        "count": 32,
+        "rate": 0.64,
+        "wilson95_descriptive": [
+          0.50141,
+          0.758613
+        ]
+      },
+      "safe_final": {
+        "count": 32,
+        "rate": 0.64,
+        "wilson95_descriptive": [
+          0.50141,
+          0.758613
+        ]
+      },
+      "suite": "main",
+      "truth_final": {
+        "count": 41,
+        "rate": 0.82,
+        "wilson95_descriptive": [
+          0.692039,
+          0.902298
+        ]
+      },
+      "writes_final_sum": 192
+    },
+    {
+      "calls_sum": 54,
+      "condition": "low",
+      "duplicate_effects_sum": 3,
+      "duplicate_episodes": 3,
+      "false_failure_final": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95_descriptive": [
+          0.0,
+          0.071348
+        ]
+      },
+      "false_success_final": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95_descriptive": [
+          0.0,
+          0.071348
+        ]
+      },
+      "latency_ticks_sum": 9,
+      "mode": "engineering",
+      "n": 50,
+      "profile": "unsupported",
+      "reads_sum": 57,
+      "reported_success": {
+        "count": 47,
+        "rate": 0.94,
+        "wilson95_descriptive": [
+          0.837829,
+          0.979385
+        ]
+      },
+      "safe_final": {
+        "count": 47,
+        "rate": 0.94,
+        "wilson95_descriptive": [
+          0.837829,
+          0.979385
+        ]
+      },
+      "suite": "main",
+      "truth_final": {
+        "count": 49,
+        "rate": 0.98,
+        "wilson95_descriptive": [
+          0.895046,
+          0.996461
+        ]
+      },
+      "writes_final_sum": 160
+    },
+    {
+      "calls_sum": 62,
+      "condition": "medium",
+      "duplicate_effects_sum": 10,
+      "duplicate_episodes": 10,
+      "false_failure_final": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95_descriptive": [
+          0.0,
+          0.071348
+        ]
+      },
+      "false_success_final": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95_descriptive": [
+          0.0,
+          0.071348
+        ]
+      },
+      "latency_ticks_sum": 31,
+      "mode": "engineering",
+      "n": 50,
+      "profile": "unsupported",
+      "reads_sum": 71,
+      "reported_success": {
+        "count": 38,
+        "rate": 0.76,
+        "wilson95_descriptive": [
+          0.625873,
+          0.857026
+        ]
+      },
+      "safe_final": {
+        "count": 38,
+        "rate": 0.76,
+        "wilson95_descriptive": [
+          0.625873,
+          0.857026
+        ]
+      },
+      "suite": "main",
+      "truth_final": {
+        "count": 44,
+        "rate": 0.88,
+        "wilson95_descriptive": [
+          0.761952,
+          0.943824
+        ]
+      },
+      "writes_final_sum": 176
+    },
+    {
+      "calls_sum": 172,
+      "condition": "all",
+      "duplicate_effects_sum": 20,
+      "duplicate_episodes": 20,
+      "false_failure_final": {
+        "count": 2,
+        "rate": 0.013333,
+        "wilson95_descriptive": [
+          0.003664,
+          0.047307
+        ]
+      },
+      "false_success_final": {
+        "count": 16,
+        "rate": 0.106667,
+        "wilson95_descriptive": [
+          0.06673,
+          0.166246
+        ]
+      },
+      "latency_ticks_sum": 52,
+      "mode": "paper_literal",
+      "n": 150,
+      "profile": "unsupported",
+      "reads_sum": 52,
+      "reported_success": {
+        "count": 124,
+        "rate": 0.826667,
+        "wilson95_descriptive": [
+          0.75814,
+          0.878879
+        ]
+      },
+      "safe_final": {
+        "count": 110,
+        "rate": 0.733333,
+        "wilson95_descriptive": [
+          0.657385,
+          0.797628
+        ]
+      },
+      "suite": "main",
+      "truth_final": {
+        "count": 120,
+        "rate": 0.8,
+        "wilson95_descriptive": [
+          0.728859,
+          0.856159
+        ]
+      },
+      "writes_final_sum": 482
+    },
+    {
+      "calls_sum": 62,
+      "condition": "high",
+      "duplicate_effects_sum": 10,
+      "duplicate_episodes": 10,
+      "false_failure_final": {
+        "count": 2,
+        "rate": 0.04,
+        "wilson95_descriptive": [
+          0.011039,
+          0.134601
+        ]
+      },
+      "false_success_final": {
+        "count": 10,
+        "rate": 0.2,
+        "wilson95_descriptive": [
+          0.112438,
+          0.330371
+        ]
+      },
+      "latency_ticks_sum": 28,
+      "mode": "paper_literal",
+      "n": 50,
+      "profile": "unsupported",
+      "reads_sum": 28,
+      "reported_success": {
+        "count": 36,
+        "rate": 0.72,
+        "wilson95_descriptive": [
+          0.583349,
+          0.825258
+        ]
+      },
+      "safe_final": {
+        "count": 28,
+        "rate": 0.56,
+        "wilson95_descriptive": [
+          0.42306,
+          0.688378
+        ]
+      },
+      "suite": "main",
+      "truth_final": {
+        "count": 33,
+        "rate": 0.66,
+        "wilson95_descriptive": [
+          0.521538,
+          0.775631
+        ]
+      },
+      "writes_final_sum": 164
+    },
+    {
+      "calls_sum": 52,
+      "condition": "low",
+      "duplicate_effects_sum": 2,
+      "duplicate_episodes": 2,
+      "false_failure_final": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95_descriptive": [
+          0.0,
+          0.071348
+        ]
+      },
+      "false_success_final": {
+        "count": 2,
+        "rate": 0.04,
+        "wilson95_descriptive": [
+          0.011039,
+          0.134601
+        ]
+      },
+      "latency_ticks_sum": 6,
+      "mode": "paper_literal",
+      "n": 50,
+      "profile": "unsupported",
+      "reads_sum": 6,
+      "reported_success": {
+        "count": 48,
+        "rate": 0.96,
+        "wilson95_descriptive": [
+          0.865399,
+          0.988961
+        ]
+      },
+      "safe_final": {
+        "count": 46,
+        "rate": 0.92,
+        "wilson95_descriptive": [
+          0.811618,
+          0.96845
+        ]
+      },
+      "suite": "main",
+      "truth_final": {
+        "count": 47,
+        "rate": 0.94,
+        "wilson95_descriptive": [
+          0.837829,
+          0.979385
+        ]
+      },
+      "writes_final_sum": 154
+    },
+    {
+      "calls_sum": 58,
+      "condition": "medium",
+      "duplicate_effects_sum": 8,
+      "duplicate_episodes": 8,
+      "false_failure_final": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95_descriptive": [
+          0.0,
+          0.071348
+        ]
+      },
+      "false_success_final": {
+        "count": 4,
+        "rate": 0.08,
+        "wilson95_descriptive": [
+          0.03155,
+          0.188382
+        ]
+      },
+      "latency_ticks_sum": 18,
+      "mode": "paper_literal",
+      "n": 50,
+      "profile": "unsupported",
+      "reads_sum": 18,
+      "reported_success": {
+        "count": 40,
+        "rate": 0.8,
+        "wilson95_descriptive": [
+          0.669629,
+          0.887562
+        ]
+      },
+      "safe_final": {
+        "count": 36,
+        "rate": 0.72,
+        "wilson95_descriptive": [
+          0.583349,
+          0.825258
+        ]
+      },
+      "suite": "main",
+      "truth_final": {
+        "count": 40,
+        "rate": 0.8,
+        "wilson95_descriptive": [
+          0.669629,
+          0.887562
+        ]
+      },
+      "writes_final_sum": 164
+    },
+    {
+      "calls_sum": 206,
+      "condition": "all",
+      "duplicate_effects_sum": 42,
+      "duplicate_episodes": 42,
+      "false_failure_final": {
+        "count": 4,
+        "rate": 0.026667,
+        "wilson95_descriptive": [
+          0.010418,
+          0.066554
+        ]
+      },
+      "false_success_final": {
+        "count": 33,
+        "rate": 0.22,
+        "wilson95_descriptive": [
+          0.16116,
+          0.292823
+        ]
+      },
+      "latency_ticks_sum": 0,
+      "mode": "retry_only",
+      "n": 150,
+      "profile": "unsupported",
+      "reads_sum": 0,
+      "reported_success": {
+        "count": 130,
+        "rate": 0.866667,
+        "wilson95_descriptive": [
+          0.80302,
+          0.912002
+        ]
+      },
+      "safe_final": {
+        "count": 101,
+        "rate": 0.673333,
+        "wilson95_descriptive": [
+          0.594769,
+          0.743242
+        ]
+      },
+      "suite": "main",
+      "truth_final": {
+        "count": 125,
+        "rate": 0.833333,
+        "wilson95_descriptive": [
+          0.765534,
+          0.884486
+        ]
+      },
+      "writes_final_sum": 568
+    },
+    {
+      "calls_sum": 80,
+      "condition": "high",
+      "duplicate_effects_sum": 21,
+      "duplicate_episodes": 21,
+      "false_failure_final": {
+        "count": 3,
+        "rate": 0.06,
+        "wilson95_descriptive": [
+          0.020615,
+          0.162171
+        ]
+      },
+      "false_success_final": {
+        "count": 11,
+        "rate": 0.22,
+        "wilson95_descriptive": [
+          0.127539,
+          0.352415
+        ]
+      },
+      "latency_ticks_sum": 0,
+      "mode": "retry_only",
+      "n": 50,
+      "profile": "unsupported",
+      "reads_sum": 0,
+      "reported_success": {
+        "count": 34,
+        "rate": 0.68,
+        "wilson95_descriptive": [
+          0.541897,
+          0.792418
+        ]
+      },
+      "safe_final": {
+        "count": 26,
+        "rate": 0.52,
+        "wilson95_descriptive": [
+          0.385117,
+          0.652029
+        ]
+      },
+      "suite": "main",
+      "truth_final": {
+        "count": 38,
+        "rate": 0.76,
+        "wilson95_descriptive": [
+          0.625873,
+          0.857026
+        ]
+      },
+      "writes_final_sum": 210
+    },
+    {
+      "calls_sum": 56,
+      "condition": "low",
+      "duplicate_effects_sum": 5,
+      "duplicate_episodes": 5,
+      "false_failure_final": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95_descriptive": [
+          0.0,
+          0.071348
+        ]
+      },
+      "false_success_final": {
+        "count": 5,
+        "rate": 0.1,
+        "wilson95_descriptive": [
+          0.043476,
+          0.213602
+        ]
+      },
+      "latency_ticks_sum": 0,
+      "mode": "retry_only",
+      "n": 50,
+      "profile": "unsupported",
+      "reads_sum": 0,
+      "reported_success": {
+        "count": 50,
+        "rate": 1.0,
+        "wilson95_descriptive": [
+          0.928652,
+          1.0
+        ]
+      },
+      "safe_final": {
+        "count": 45,
+        "rate": 0.9,
+        "wilson95_descriptive": [
+          0.786398,
+          0.956524
+        ]
+      },
+      "suite": "main",
+      "truth_final": {
+        "count": 48,
+        "rate": 0.96,
+        "wilson95_descriptive": [
+          0.865399,
+          0.988961
+        ]
+      },
+      "writes_final_sum": 166
+    },
+    {
+      "calls_sum": 70,
+      "condition": "medium",
+      "duplicate_effects_sum": 16,
+      "duplicate_episodes": 16,
+      "false_failure_final": {
+        "count": 1,
+        "rate": 0.02,
+        "wilson95_descriptive": [
+          0.003539,
+          0.104954
+        ]
+      },
+      "false_success_final": {
+        "count": 17,
+        "rate": 0.34,
+        "wilson95_descriptive": [
+          0.224369,
+          0.478462
+        ]
+      },
+      "latency_ticks_sum": 0,
+      "mode": "retry_only",
+      "n": 50,
+      "profile": "unsupported",
+      "reads_sum": 0,
+      "reported_success": {
+        "count": 46,
+        "rate": 0.92,
+        "wilson95_descriptive": [
+          0.811618,
+          0.96845
+        ]
+      },
+      "safe_final": {
+        "count": 30,
+        "rate": 0.6,
+        "wilson95_descriptive": [
+          0.461814,
+          0.723916
+        ]
+      },
+      "suite": "main",
+      "truth_final": {
+        "count": 39,
+        "rate": 0.78,
+        "wilson95_descriptive": [
+          0.647585,
+          0.872461
+        ]
+      },
+      "writes_final_sum": 192
+    },
+    {
+      "calls_sum": 150,
+      "condition": "all",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 22,
+        "rate": 0.146667,
+        "wilson95_descriptive": [
+          0.098894,
+          0.212085
+        ]
+      },
+      "false_success_final": {
+        "count": 16,
+        "rate": 0.106667,
+        "wilson95_descriptive": [
+          0.06673,
+          0.166246
+        ]
+      },
+      "latency_ticks_sum": 52,
+      "mode": "verify_only",
+      "n": 150,
+      "profile": "unsupported",
+      "reads_sum": 52,
+      "reported_success": {
+        "count": 124,
+        "rate": 0.826667,
+        "wilson95_descriptive": [
+          0.75814,
+          0.878879
+        ]
+      },
+      "safe_final": {
+        "count": 130,
+        "rate": 0.866667,
+        "wilson95_descriptive": [
+          0.80302,
+          0.912002
+        ]
+      },
+      "suite": "main",
+      "truth_final": {
+        "count": 130,
+        "rate": 0.866667,
+        "wilson95_descriptive": [
+          0.80302,
+          0.912002
+        ]
+      },
+      "writes_final_sum": 422
+    },
+    {
+      "calls_sum": 50,
+      "condition": "high",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 12,
+        "rate": 0.24,
+        "wilson95_descriptive": [
+          0.142974,
+          0.374127
+        ]
+      },
+      "false_success_final": {
+        "count": 10,
+        "rate": 0.2,
+        "wilson95_descriptive": [
+          0.112438,
+          0.330371
+        ]
+      },
+      "latency_ticks_sum": 28,
+      "mode": "verify_only",
+      "n": 50,
+      "profile": "unsupported",
+      "reads_sum": 28,
+      "reported_success": {
+        "count": 36,
+        "rate": 0.72,
+        "wilson95_descriptive": [
+          0.583349,
+          0.825258
+        ]
+      },
+      "safe_final": {
+        "count": 38,
+        "rate": 0.76,
+        "wilson95_descriptive": [
+          0.625873,
+          0.857026
+        ]
+      },
+      "suite": "main",
+      "truth_final": {
+        "count": 38,
+        "rate": 0.76,
+        "wilson95_descriptive": [
+          0.625873,
+          0.857026
+        ]
+      },
+      "writes_final_sum": 134
+    },
+    {
+      "calls_sum": 50,
+      "condition": "low",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 2,
+        "rate": 0.04,
+        "wilson95_descriptive": [
+          0.011039,
+          0.134601
+        ]
+      },
+      "false_success_final": {
+        "count": 2,
+        "rate": 0.04,
+        "wilson95_descriptive": [
+          0.011039,
+          0.134601
+        ]
+      },
+      "latency_ticks_sum": 6,
+      "mode": "verify_only",
+      "n": 50,
+      "profile": "unsupported",
+      "reads_sum": 6,
+      "reported_success": {
+        "count": 48,
+        "rate": 0.96,
+        "wilson95_descriptive": [
+          0.865399,
+          0.988961
+        ]
+      },
+      "safe_final": {
+        "count": 48,
+        "rate": 0.96,
+        "wilson95_descriptive": [
+          0.865399,
+          0.988961
+        ]
+      },
+      "suite": "main",
+      "truth_final": {
+        "count": 48,
+        "rate": 0.96,
+        "wilson95_descriptive": [
+          0.865399,
+          0.988961
+        ]
+      },
+      "writes_final_sum": 148
+    },
+    {
+      "calls_sum": 50,
+      "condition": "medium",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 8,
+        "rate": 0.16,
+        "wilson95_descriptive": [
+          0.083374,
+          0.285142
+        ]
+      },
+      "false_success_final": {
+        "count": 4,
+        "rate": 0.08,
+        "wilson95_descriptive": [
+          0.03155,
+          0.188382
+        ]
+      },
+      "latency_ticks_sum": 18,
+      "mode": "verify_only",
+      "n": 50,
+      "profile": "unsupported",
+      "reads_sum": 18,
+      "reported_success": {
+        "count": 40,
+        "rate": 0.8,
+        "wilson95_descriptive": [
+          0.669629,
+          0.887562
+        ]
+      },
+      "safe_final": {
+        "count": 44,
+        "rate": 0.88,
+        "wilson95_descriptive": [
+          0.761952,
+          0.943824
+        ]
+      },
+      "suite": "main",
+      "truth_final": {
+        "count": 44,
+        "rate": 0.88,
+        "wilson95_descriptive": [
+          0.761952,
+          0.943824
+        ]
+      },
+      "writes_final_sum": 140
+    },
+    {
+      "calls_sum": 180,
+      "condition": "all",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 10,
+        "rate": 0.083333
+      },
+      "false_success_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "latency_ticks_sum": 150,
+      "mode": "engineering",
+      "n": 120,
+      "profile": "supported",
+      "reads_sum": 240,
+      "reported_success": {
+        "count": 90,
+        "rate": 0.75
+      },
+      "safe_final": {
+        "count": 100,
+        "rate": 0.833333
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 100,
+        "rate": 0.833333
+      },
+      "writes_final_sum": 300
+    },
+    {
+      "calls_sum": 10,
+      "condition": "clean",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "false_success_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "latency_ticks_sum": 0,
+      "mode": "engineering",
+      "n": 10,
+      "profile": "supported",
+      "reads_sum": 10,
+      "reported_success": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "safe_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "writes_final_sum": 30
+    },
+    {
+      "calls_sum": 10,
+      "condition": "commit_after_budget",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "false_success_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "latency_ticks_sum": 30,
+      "mode": "engineering",
+      "n": 10,
+      "profile": "supported",
+      "reads_sum": 30,
+      "reported_success": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "safe_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "writes_final_sum": 30
+    },
+    {
+      "calls_sum": 10,
+      "condition": "commit_timeout",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "false_success_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "latency_ticks_sum": 10,
+      "mode": "engineering",
+      "n": 10,
+      "profile": "supported",
+      "reads_sum": 10,
+      "reported_success": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "safe_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "writes_final_sum": 30
+    },
+    {
+      "calls_sum": 10,
+      "condition": "definitive_conflict",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "false_success_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "latency_ticks_sum": 0,
+      "mode": "engineering",
+      "n": 10,
+      "profile": "supported",
+      "reads_sum": 0,
+      "reported_success": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "safe_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "writes_final_sum": 0
+    },
+    {
+      "calls_sum": 20,
+      "condition": "delayed_commit",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "false_success_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "latency_ticks_sum": 20,
+      "mode": "engineering",
+      "n": 10,
+      "profile": "supported",
+      "reads_sum": 30,
+      "reported_success": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "safe_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "writes_final_sum": 30
+    },
+    {
+      "calls_sum": 10,
+      "condition": "delayed_unknown",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "false_success_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "latency_ticks_sum": 20,
+      "mode": "engineering",
+      "n": 10,
+      "profile": "supported",
+      "reads_sum": 20,
+      "reported_success": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "safe_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "writes_final_sum": 30
+    },
+    {
+      "calls_sum": 20,
+      "condition": "false_success",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "false_success_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "latency_ticks_sum": 0,
+      "mode": "engineering",
+      "n": 10,
+      "profile": "supported",
+      "reads_sum": 20,
+      "reported_success": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "safe_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "writes_final_sum": 30
+    },
+    {
+      "calls_sum": 20,
+      "condition": "no_effect_timeout",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "false_success_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "latency_ticks_sum": 10,
+      "mode": "engineering",
+      "n": 10,
+      "profile": "supported",
+      "reads_sum": 20,
+      "reported_success": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "safe_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "writes_final_sum": 30
+    },
+    {
+      "calls_sum": 20,
+      "condition": "partial_ambiguous",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "false_success_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "latency_ticks_sum": 10,
+      "mode": "engineering",
+      "n": 10,
+      "profile": "supported",
+      "reads_sum": 20,
+      "reported_success": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "safe_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "writes_final_sum": 30
+    },
+    {
+      "calls_sum": 20,
+      "condition": "partial_success",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "false_success_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "latency_ticks_sum": 0,
+      "mode": "engineering",
+      "n": 10,
+      "profile": "supported",
+      "reads_sum": 20,
+      "reported_success": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "safe_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "writes_final_sum": 30
+    },
+    {
+      "calls_sum": 20,
+      "condition": "stale_false",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "false_success_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "latency_ticks_sum": 20,
+      "mode": "engineering",
+      "n": 10,
+      "profile": "supported",
+      "reads_sum": 30,
+      "reported_success": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "safe_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "writes_final_sum": 30
+    },
+    {
+      "calls_sum": 10,
+      "condition": "unknown_forever",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "false_success_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "latency_ticks_sum": 30,
+      "mode": "engineering",
+      "n": 10,
+      "profile": "supported",
+      "reads_sum": 30,
+      "reported_success": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "safe_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "writes_final_sum": 0
+    },
+    {
+      "calls_sum": 150,
+      "condition": "all",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 50,
+        "rate": 0.416667
+      },
+      "false_success_final": {
+        "count": 30,
+        "rate": 0.25
+      },
+      "latency_ticks_sum": 80,
+      "mode": "paper_literal",
+      "n": 120,
+      "profile": "supported",
+      "reads_sum": 80,
+      "reported_success": {
+        "count": 50,
+        "rate": 0.416667
+      },
+      "safe_final": {
+        "count": 70,
+        "rate": 0.583333
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 70,
+        "rate": 0.583333
+      },
+      "writes_final_sum": 250
+    },
+    {
+      "calls_sum": 10,
+      "condition": "clean",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "false_success_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "latency_ticks_sum": 0,
+      "mode": "paper_literal",
+      "n": 10,
+      "profile": "supported",
+      "reads_sum": 0,
+      "reported_success": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "safe_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "writes_final_sum": 30
+    },
+    {
+      "calls_sum": 10,
+      "condition": "commit_after_budget",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "false_success_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "latency_ticks_sum": 10,
+      "mode": "paper_literal",
+      "n": 10,
+      "profile": "supported",
+      "reads_sum": 10,
+      "reported_success": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "safe_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "writes_final_sum": 30
+    },
+    {
+      "calls_sum": 10,
+      "condition": "commit_timeout",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "false_success_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "latency_ticks_sum": 10,
+      "mode": "paper_literal",
+      "n": 10,
+      "profile": "supported",
+      "reads_sum": 10,
+      "reported_success": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "safe_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "writes_final_sum": 30
+    },
+    {
+      "calls_sum": 10,
+      "condition": "definitive_conflict",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "false_success_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "latency_ticks_sum": 0,
+      "mode": "paper_literal",
+      "n": 10,
+      "profile": "supported",
+      "reads_sum": 0,
+      "reported_success": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "safe_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "writes_final_sum": 0
+    },
+    {
+      "calls_sum": 20,
+      "condition": "delayed_commit",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "false_success_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "latency_ticks_sum": 10,
+      "mode": "paper_literal",
+      "n": 10,
+      "profile": "supported",
+      "reads_sum": 10,
+      "reported_success": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "safe_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "writes_final_sum": 30
+    },
+    {
+      "calls_sum": 10,
+      "condition": "delayed_unknown",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "false_success_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "latency_ticks_sum": 10,
+      "mode": "paper_literal",
+      "n": 10,
+      "profile": "supported",
+      "reads_sum": 10,
+      "reported_success": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "safe_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "writes_final_sum": 30
+    },
+    {
+      "calls_sum": 10,
+      "condition": "false_success",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "false_success_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "latency_ticks_sum": 0,
+      "mode": "paper_literal",
+      "n": 10,
+      "profile": "supported",
+      "reads_sum": 0,
+      "reported_success": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "safe_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "writes_final_sum": 0
+    },
+    {
+      "calls_sum": 20,
+      "condition": "no_effect_timeout",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "false_success_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "latency_ticks_sum": 10,
+      "mode": "paper_literal",
+      "n": 10,
+      "profile": "supported",
+      "reads_sum": 10,
+      "reported_success": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "safe_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "writes_final_sum": 30
+    },
+    {
+      "calls_sum": 10,
+      "condition": "partial_ambiguous",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "false_success_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "latency_ticks_sum": 10,
+      "mode": "paper_literal",
+      "n": 10,
+      "profile": "supported",
+      "reads_sum": 10,
+      "reported_success": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "safe_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "writes_final_sum": 20
+    },
+    {
+      "calls_sum": 10,
+      "condition": "partial_success",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "false_success_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "latency_ticks_sum": 0,
+      "mode": "paper_literal",
+      "n": 10,
+      "profile": "supported",
+      "reads_sum": 0,
+      "reported_success": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "safe_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "writes_final_sum": 20
+    },
+    {
+      "calls_sum": 20,
+      "condition": "stale_false",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "false_success_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "latency_ticks_sum": 10,
+      "mode": "paper_literal",
+      "n": 10,
+      "profile": "supported",
+      "reads_sum": 10,
+      "reported_success": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "safe_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "writes_final_sum": 30
+    },
+    {
+      "calls_sum": 10,
+      "condition": "unknown_forever",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "false_success_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "latency_ticks_sum": 10,
+      "mode": "paper_literal",
+      "n": 10,
+      "profile": "supported",
+      "reads_sum": 10,
+      "reported_success": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "safe_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "writes_final_sum": 0
+    },
+    {
+      "calls_sum": 210,
+      "condition": "all",
+      "duplicate_effects_sum": 55,
+      "duplicate_episodes": 55,
+      "false_failure_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "false_success_final": {
+        "count": 75,
+        "rate": 0.625
+      },
+      "latency_ticks_sum": 0,
+      "mode": "retry_only",
+      "n": 120,
+      "profile": "supported",
+      "reads_sum": 0,
+      "reported_success": {
+        "count": 120,
+        "rate": 1.0
+      },
+      "safe_final": {
+        "count": 45,
+        "rate": 0.375
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 75,
+        "rate": 0.625
+      },
+      "writes_final_sum": 490
+    },
+    {
+      "calls_sum": 10,
+      "condition": "clean",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "false_success_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "latency_ticks_sum": 0,
+      "mode": "retry_only",
+      "n": 10,
+      "profile": "supported",
+      "reads_sum": 0,
+      "reported_success": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "safe_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "writes_final_sum": 30
+    },
+    {
+      "calls_sum": 20,
+      "condition": "commit_after_budget",
+      "duplicate_effects_sum": 10,
+      "duplicate_episodes": 10,
+      "false_failure_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "false_success_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "latency_ticks_sum": 0,
+      "mode": "retry_only",
+      "n": 10,
+      "profile": "supported",
+      "reads_sum": 0,
+      "reported_success": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "safe_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 5,
+        "rate": 0.5
+      },
+      "writes_final_sum": 60
+    },
+    {
+      "calls_sum": 20,
+      "condition": "commit_timeout",
+      "duplicate_effects_sum": 10,
+      "duplicate_episodes": 10,
+      "false_failure_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "false_success_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "latency_ticks_sum": 0,
+      "mode": "retry_only",
+      "n": 10,
+      "profile": "supported",
+      "reads_sum": 0,
+      "reported_success": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "safe_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 5,
+        "rate": 0.5
+      },
+      "writes_final_sum": 60
+    },
+    {
+      "calls_sum": 20,
+      "condition": "definitive_conflict",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "false_success_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "latency_ticks_sum": 0,
+      "mode": "retry_only",
+      "n": 10,
+      "profile": "supported",
+      "reads_sum": 0,
+      "reported_success": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "safe_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "writes_final_sum": 30
+    },
+    {
+      "calls_sum": 20,
+      "condition": "delayed_commit",
+      "duplicate_effects_sum": 10,
+      "duplicate_episodes": 10,
+      "false_failure_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "false_success_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "latency_ticks_sum": 0,
+      "mode": "retry_only",
+      "n": 10,
+      "profile": "supported",
+      "reads_sum": 0,
+      "reported_success": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "safe_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 5,
+        "rate": 0.5
+      },
+      "writes_final_sum": 60
+    },
+    {
+      "calls_sum": 20,
+      "condition": "delayed_unknown",
+      "duplicate_effects_sum": 10,
+      "duplicate_episodes": 10,
+      "false_failure_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "false_success_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "latency_ticks_sum": 0,
+      "mode": "retry_only",
+      "n": 10,
+      "profile": "supported",
+      "reads_sum": 0,
+      "reported_success": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "safe_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 5,
+        "rate": 0.5
+      },
+      "writes_final_sum": 60
+    },
+    {
+      "calls_sum": 10,
+      "condition": "false_success",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "false_success_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "latency_ticks_sum": 0,
+      "mode": "retry_only",
+      "n": 10,
+      "profile": "supported",
+      "reads_sum": 0,
+      "reported_success": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "safe_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "writes_final_sum": 0
+    },
+    {
+      "calls_sum": 20,
+      "condition": "no_effect_timeout",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "false_success_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "latency_ticks_sum": 0,
+      "mode": "retry_only",
+      "n": 10,
+      "profile": "supported",
+      "reads_sum": 0,
+      "reported_success": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "safe_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "writes_final_sum": 30
+    },
+    {
+      "calls_sum": 20,
+      "condition": "partial_ambiguous",
+      "duplicate_effects_sum": 5,
+      "duplicate_episodes": 5,
+      "false_failure_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "false_success_final": {
+        "count": 5,
+        "rate": 0.5
+      },
+      "latency_ticks_sum": 0,
+      "mode": "retry_only",
+      "n": 10,
+      "profile": "supported",
+      "reads_sum": 0,
+      "reported_success": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "safe_final": {
+        "count": 5,
+        "rate": 0.5
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "writes_final_sum": 50
+    },
+    {
+      "calls_sum": 10,
+      "condition": "partial_success",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "false_success_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "latency_ticks_sum": 0,
+      "mode": "retry_only",
+      "n": 10,
+      "profile": "supported",
+      "reads_sum": 0,
+      "reported_success": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "safe_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "writes_final_sum": 20
+    },
+    {
+      "calls_sum": 20,
+      "condition": "stale_false",
+      "duplicate_effects_sum": 10,
+      "duplicate_episodes": 10,
+      "false_failure_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "false_success_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "latency_ticks_sum": 0,
+      "mode": "retry_only",
+      "n": 10,
+      "profile": "supported",
+      "reads_sum": 0,
+      "reported_success": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "safe_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 5,
+        "rate": 0.5
+      },
+      "writes_final_sum": 60
+    },
+    {
+      "calls_sum": 20,
+      "condition": "unknown_forever",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "false_success_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "latency_ticks_sum": 0,
+      "mode": "retry_only",
+      "n": 10,
+      "profile": "supported",
+      "reads_sum": 0,
+      "reported_success": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "safe_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "writes_final_sum": 30
+    },
+    {
+      "calls_sum": 120,
+      "condition": "all",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 40,
+        "rate": 0.333333
+      },
+      "false_success_final": {
+        "count": 30,
+        "rate": 0.25
+      },
+      "latency_ticks_sum": 80,
+      "mode": "verify_only",
+      "n": 120,
+      "profile": "supported",
+      "reads_sum": 80,
+      "reported_success": {
+        "count": 50,
+        "rate": 0.416667
+      },
+      "safe_final": {
+        "count": 60,
+        "rate": 0.5
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 60,
+        "rate": 0.5
+      },
+      "writes_final_sum": 220
+    },
+    {
+      "calls_sum": 10,
+      "condition": "clean",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "false_success_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "latency_ticks_sum": 0,
+      "mode": "verify_only",
+      "n": 10,
+      "profile": "supported",
+      "reads_sum": 0,
+      "reported_success": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "safe_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "writes_final_sum": 30
+    },
+    {
+      "calls_sum": 10,
+      "condition": "commit_after_budget",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "false_success_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "latency_ticks_sum": 10,
+      "mode": "verify_only",
+      "n": 10,
+      "profile": "supported",
+      "reads_sum": 10,
+      "reported_success": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "safe_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "writes_final_sum": 30
+    },
+    {
+      "calls_sum": 10,
+      "condition": "commit_timeout",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "false_success_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "latency_ticks_sum": 10,
+      "mode": "verify_only",
+      "n": 10,
+      "profile": "supported",
+      "reads_sum": 10,
+      "reported_success": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "safe_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "writes_final_sum": 30
+    },
+    {
+      "calls_sum": 10,
+      "condition": "definitive_conflict",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "false_success_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "latency_ticks_sum": 0,
+      "mode": "verify_only",
+      "n": 10,
+      "profile": "supported",
+      "reads_sum": 0,
+      "reported_success": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "safe_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "writes_final_sum": 0
+    },
+    {
+      "calls_sum": 10,
+      "condition": "delayed_commit",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "false_success_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "latency_ticks_sum": 10,
+      "mode": "verify_only",
+      "n": 10,
+      "profile": "supported",
+      "reads_sum": 10,
+      "reported_success": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "safe_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "writes_final_sum": 30
+    },
+    {
+      "calls_sum": 10,
+      "condition": "delayed_unknown",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "false_success_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "latency_ticks_sum": 10,
+      "mode": "verify_only",
+      "n": 10,
+      "profile": "supported",
+      "reads_sum": 10,
+      "reported_success": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "safe_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "writes_final_sum": 30
+    },
+    {
+      "calls_sum": 10,
+      "condition": "false_success",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "false_success_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "latency_ticks_sum": 0,
+      "mode": "verify_only",
+      "n": 10,
+      "profile": "supported",
+      "reads_sum": 0,
+      "reported_success": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "safe_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "writes_final_sum": 0
+    },
+    {
+      "calls_sum": 10,
+      "condition": "no_effect_timeout",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "false_success_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "latency_ticks_sum": 10,
+      "mode": "verify_only",
+      "n": 10,
+      "profile": "supported",
+      "reads_sum": 10,
+      "reported_success": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "safe_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "writes_final_sum": 0
+    },
+    {
+      "calls_sum": 10,
+      "condition": "partial_ambiguous",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "false_success_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "latency_ticks_sum": 10,
+      "mode": "verify_only",
+      "n": 10,
+      "profile": "supported",
+      "reads_sum": 10,
+      "reported_success": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "safe_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "writes_final_sum": 20
+    },
+    {
+      "calls_sum": 10,
+      "condition": "partial_success",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "false_success_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "latency_ticks_sum": 0,
+      "mode": "verify_only",
+      "n": 10,
+      "profile": "supported",
+      "reads_sum": 0,
+      "reported_success": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "safe_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "writes_final_sum": 20
+    },
+    {
+      "calls_sum": 10,
+      "condition": "stale_false",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "false_success_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "latency_ticks_sum": 10,
+      "mode": "verify_only",
+      "n": 10,
+      "profile": "supported",
+      "reads_sum": 10,
+      "reported_success": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "safe_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "writes_final_sum": 30
+    },
+    {
+      "calls_sum": 10,
+      "condition": "unknown_forever",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "false_success_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "latency_ticks_sum": 10,
+      "mode": "verify_only",
+      "n": 10,
+      "profile": "supported",
+      "reads_sum": 10,
+      "reported_success": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "safe_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "writes_final_sum": 0
+    },
+    {
+      "calls_sum": 180,
+      "condition": "all",
+      "duplicate_effects_sum": 30,
+      "duplicate_episodes": 30,
+      "false_failure_final": {
+        "count": 10,
+        "rate": 0.083333
+      },
+      "false_success_final": {
+        "count": 10,
+        "rate": 0.083333
+      },
+      "latency_ticks_sum": 150,
+      "mode": "engineering",
+      "n": 120,
+      "profile": "unsupported",
+      "reads_sum": 240,
+      "reported_success": {
+        "count": 70,
+        "rate": 0.583333
+      },
+      "safe_final": {
+        "count": 70,
+        "rate": 0.583333
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 90,
+        "rate": 0.75
+      },
+      "writes_final_sum": 400
+    },
+    {
+      "calls_sum": 10,
+      "condition": "clean",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "false_success_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "latency_ticks_sum": 0,
+      "mode": "engineering",
+      "n": 10,
+      "profile": "unsupported",
+      "reads_sum": 10,
+      "reported_success": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "safe_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "writes_final_sum": 30
+    },
+    {
+      "calls_sum": 10,
+      "condition": "commit_after_budget",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "false_success_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "latency_ticks_sum": 30,
+      "mode": "engineering",
+      "n": 10,
+      "profile": "unsupported",
+      "reads_sum": 30,
+      "reported_success": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "safe_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "writes_final_sum": 30
+    },
+    {
+      "calls_sum": 10,
+      "condition": "commit_timeout",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "false_success_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "latency_ticks_sum": 10,
+      "mode": "engineering",
+      "n": 10,
+      "profile": "unsupported",
+      "reads_sum": 10,
+      "reported_success": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "safe_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "writes_final_sum": 30
+    },
+    {
+      "calls_sum": 10,
+      "condition": "definitive_conflict",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "false_success_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "latency_ticks_sum": 0,
+      "mode": "engineering",
+      "n": 10,
+      "profile": "unsupported",
+      "reads_sum": 0,
+      "reported_success": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "safe_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "writes_final_sum": 0
+    },
+    {
+      "calls_sum": 20,
+      "condition": "delayed_commit",
+      "duplicate_effects_sum": 10,
+      "duplicate_episodes": 10,
+      "false_failure_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "false_success_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "latency_ticks_sum": 10,
+      "mode": "engineering",
+      "n": 10,
+      "profile": "unsupported",
+      "reads_sum": 20,
+      "reported_success": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "safe_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 5,
+        "rate": 0.5
+      },
+      "writes_final_sum": 60
+    },
+    {
+      "calls_sum": 10,
+      "condition": "delayed_unknown",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "false_success_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "latency_ticks_sum": 20,
+      "mode": "engineering",
+      "n": 10,
+      "profile": "unsupported",
+      "reads_sum": 20,
+      "reported_success": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "safe_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "writes_final_sum": 30
+    },
+    {
+      "calls_sum": 20,
+      "condition": "false_success",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "false_success_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "latency_ticks_sum": 0,
+      "mode": "engineering",
+      "n": 10,
+      "profile": "unsupported",
+      "reads_sum": 20,
+      "reported_success": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "safe_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "writes_final_sum": 30
+    },
+    {
+      "calls_sum": 20,
+      "condition": "no_effect_timeout",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "false_success_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "latency_ticks_sum": 10,
+      "mode": "engineering",
+      "n": 10,
+      "profile": "unsupported",
+      "reads_sum": 20,
+      "reported_success": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "safe_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "writes_final_sum": 30
+    },
+    {
+      "calls_sum": 20,
+      "condition": "partial_ambiguous",
+      "duplicate_effects_sum": 5,
+      "duplicate_episodes": 5,
+      "false_failure_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "false_success_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "latency_ticks_sum": 15,
+      "mode": "engineering",
+      "n": 10,
+      "profile": "unsupported",
+      "reads_sum": 25,
+      "reported_success": {
+        "count": 5,
+        "rate": 0.5
+      },
+      "safe_final": {
+        "count": 5,
+        "rate": 0.5
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "writes_final_sum": 50
+    },
+    {
+      "calls_sum": 20,
+      "condition": "partial_success",
+      "duplicate_effects_sum": 5,
+      "duplicate_episodes": 5,
+      "false_failure_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "false_success_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "latency_ticks_sum": 5,
+      "mode": "engineering",
+      "n": 10,
+      "profile": "unsupported",
+      "reads_sum": 25,
+      "reported_success": {
+        "count": 5,
+        "rate": 0.5
+      },
+      "safe_final": {
+        "count": 5,
+        "rate": 0.5
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "writes_final_sum": 50
+    },
+    {
+      "calls_sum": 20,
+      "condition": "stale_false",
+      "duplicate_effects_sum": 10,
+      "duplicate_episodes": 10,
+      "false_failure_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "false_success_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "latency_ticks_sum": 20,
+      "mode": "engineering",
+      "n": 10,
+      "profile": "unsupported",
+      "reads_sum": 30,
+      "reported_success": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "safe_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 5,
+        "rate": 0.5
+      },
+      "writes_final_sum": 60
+    },
+    {
+      "calls_sum": 10,
+      "condition": "unknown_forever",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "false_success_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "latency_ticks_sum": 30,
+      "mode": "engineering",
+      "n": 10,
+      "profile": "unsupported",
+      "reads_sum": 30,
+      "reported_success": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "safe_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "writes_final_sum": 0
+    },
+    {
+      "calls_sum": 150,
+      "condition": "all",
+      "duplicate_effects_sum": 20,
+      "duplicate_episodes": 20,
+      "false_failure_final": {
+        "count": 30,
+        "rate": 0.25
+      },
+      "false_success_final": {
+        "count": 30,
+        "rate": 0.25
+      },
+      "latency_ticks_sum": 80,
+      "mode": "paper_literal",
+      "n": 120,
+      "profile": "unsupported",
+      "reads_sum": 80,
+      "reported_success": {
+        "count": 50,
+        "rate": 0.416667
+      },
+      "safe_final": {
+        "count": 50,
+        "rate": 0.416667
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 60,
+        "rate": 0.5
+      },
+      "writes_final_sum": 310
+    },
+    {
+      "calls_sum": 10,
+      "condition": "clean",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "false_success_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "latency_ticks_sum": 0,
+      "mode": "paper_literal",
+      "n": 10,
+      "profile": "unsupported",
+      "reads_sum": 0,
+      "reported_success": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "safe_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "writes_final_sum": 30
+    },
+    {
+      "calls_sum": 10,
+      "condition": "commit_after_budget",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "false_success_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "latency_ticks_sum": 10,
+      "mode": "paper_literal",
+      "n": 10,
+      "profile": "unsupported",
+      "reads_sum": 10,
+      "reported_success": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "safe_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "writes_final_sum": 30
+    },
+    {
+      "calls_sum": 10,
+      "condition": "commit_timeout",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "false_success_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "latency_ticks_sum": 10,
+      "mode": "paper_literal",
+      "n": 10,
+      "profile": "unsupported",
+      "reads_sum": 10,
+      "reported_success": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "safe_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "writes_final_sum": 30
+    },
+    {
+      "calls_sum": 10,
+      "condition": "definitive_conflict",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "false_success_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "latency_ticks_sum": 0,
+      "mode": "paper_literal",
+      "n": 10,
+      "profile": "unsupported",
+      "reads_sum": 0,
+      "reported_success": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "safe_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "writes_final_sum": 0
+    },
+    {
+      "calls_sum": 20,
+      "condition": "delayed_commit",
+      "duplicate_effects_sum": 10,
+      "duplicate_episodes": 10,
+      "false_failure_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "false_success_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "latency_ticks_sum": 10,
+      "mode": "paper_literal",
+      "n": 10,
+      "profile": "unsupported",
+      "reads_sum": 10,
+      "reported_success": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "safe_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 5,
+        "rate": 0.5
+      },
+      "writes_final_sum": 60
+    },
+    {
+      "calls_sum": 10,
+      "condition": "delayed_unknown",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "false_success_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "latency_ticks_sum": 10,
+      "mode": "paper_literal",
+      "n": 10,
+      "profile": "unsupported",
+      "reads_sum": 10,
+      "reported_success": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "safe_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "writes_final_sum": 30
+    },
+    {
+      "calls_sum": 10,
+      "condition": "false_success",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "false_success_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "latency_ticks_sum": 0,
+      "mode": "paper_literal",
+      "n": 10,
+      "profile": "unsupported",
+      "reads_sum": 0,
+      "reported_success": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "safe_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "writes_final_sum": 0
+    },
+    {
+      "calls_sum": 20,
+      "condition": "no_effect_timeout",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "false_success_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "latency_ticks_sum": 10,
+      "mode": "paper_literal",
+      "n": 10,
+      "profile": "unsupported",
+      "reads_sum": 10,
+      "reported_success": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "safe_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "writes_final_sum": 30
+    },
+    {
+      "calls_sum": 10,
+      "condition": "partial_ambiguous",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "false_success_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "latency_ticks_sum": 10,
+      "mode": "paper_literal",
+      "n": 10,
+      "profile": "unsupported",
+      "reads_sum": 10,
+      "reported_success": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "safe_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "writes_final_sum": 20
+    },
+    {
+      "calls_sum": 10,
+      "condition": "partial_success",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "false_success_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "latency_ticks_sum": 0,
+      "mode": "paper_literal",
+      "n": 10,
+      "profile": "unsupported",
+      "reads_sum": 0,
+      "reported_success": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "safe_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "writes_final_sum": 20
+    },
+    {
+      "calls_sum": 20,
+      "condition": "stale_false",
+      "duplicate_effects_sum": 10,
+      "duplicate_episodes": 10,
+      "false_failure_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "false_success_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "latency_ticks_sum": 10,
+      "mode": "paper_literal",
+      "n": 10,
+      "profile": "unsupported",
+      "reads_sum": 10,
+      "reported_success": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "safe_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 5,
+        "rate": 0.5
+      },
+      "writes_final_sum": 60
+    },
+    {
+      "calls_sum": 10,
+      "condition": "unknown_forever",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "false_success_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "latency_ticks_sum": 10,
+      "mode": "paper_literal",
+      "n": 10,
+      "profile": "unsupported",
+      "reads_sum": 10,
+      "reported_success": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "safe_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "writes_final_sum": 0
+    },
+    {
+      "calls_sum": 210,
+      "condition": "all",
+      "duplicate_effects_sum": 55,
+      "duplicate_episodes": 55,
+      "false_failure_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "false_success_final": {
+        "count": 75,
+        "rate": 0.625
+      },
+      "latency_ticks_sum": 0,
+      "mode": "retry_only",
+      "n": 120,
+      "profile": "unsupported",
+      "reads_sum": 0,
+      "reported_success": {
+        "count": 120,
+        "rate": 1.0
+      },
+      "safe_final": {
+        "count": 45,
+        "rate": 0.375
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 75,
+        "rate": 0.625
+      },
+      "writes_final_sum": 490
+    },
+    {
+      "calls_sum": 10,
+      "condition": "clean",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "false_success_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "latency_ticks_sum": 0,
+      "mode": "retry_only",
+      "n": 10,
+      "profile": "unsupported",
+      "reads_sum": 0,
+      "reported_success": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "safe_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "writes_final_sum": 30
+    },
+    {
+      "calls_sum": 20,
+      "condition": "commit_after_budget",
+      "duplicate_effects_sum": 10,
+      "duplicate_episodes": 10,
+      "false_failure_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "false_success_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "latency_ticks_sum": 0,
+      "mode": "retry_only",
+      "n": 10,
+      "profile": "unsupported",
+      "reads_sum": 0,
+      "reported_success": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "safe_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 5,
+        "rate": 0.5
+      },
+      "writes_final_sum": 60
+    },
+    {
+      "calls_sum": 20,
+      "condition": "commit_timeout",
+      "duplicate_effects_sum": 10,
+      "duplicate_episodes": 10,
+      "false_failure_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "false_success_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "latency_ticks_sum": 0,
+      "mode": "retry_only",
+      "n": 10,
+      "profile": "unsupported",
+      "reads_sum": 0,
+      "reported_success": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "safe_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 5,
+        "rate": 0.5
+      },
+      "writes_final_sum": 60
+    },
+    {
+      "calls_sum": 20,
+      "condition": "definitive_conflict",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "false_success_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "latency_ticks_sum": 0,
+      "mode": "retry_only",
+      "n": 10,
+      "profile": "unsupported",
+      "reads_sum": 0,
+      "reported_success": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "safe_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "writes_final_sum": 30
+    },
+    {
+      "calls_sum": 20,
+      "condition": "delayed_commit",
+      "duplicate_effects_sum": 10,
+      "duplicate_episodes": 10,
+      "false_failure_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "false_success_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "latency_ticks_sum": 0,
+      "mode": "retry_only",
+      "n": 10,
+      "profile": "unsupported",
+      "reads_sum": 0,
+      "reported_success": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "safe_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 5,
+        "rate": 0.5
+      },
+      "writes_final_sum": 60
+    },
+    {
+      "calls_sum": 20,
+      "condition": "delayed_unknown",
+      "duplicate_effects_sum": 10,
+      "duplicate_episodes": 10,
+      "false_failure_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "false_success_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "latency_ticks_sum": 0,
+      "mode": "retry_only",
+      "n": 10,
+      "profile": "unsupported",
+      "reads_sum": 0,
+      "reported_success": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "safe_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 5,
+        "rate": 0.5
+      },
+      "writes_final_sum": 60
+    },
+    {
+      "calls_sum": 10,
+      "condition": "false_success",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "false_success_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "latency_ticks_sum": 0,
+      "mode": "retry_only",
+      "n": 10,
+      "profile": "unsupported",
+      "reads_sum": 0,
+      "reported_success": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "safe_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "writes_final_sum": 0
+    },
+    {
+      "calls_sum": 20,
+      "condition": "no_effect_timeout",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "false_success_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "latency_ticks_sum": 0,
+      "mode": "retry_only",
+      "n": 10,
+      "profile": "unsupported",
+      "reads_sum": 0,
+      "reported_success": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "safe_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "writes_final_sum": 30
+    },
+    {
+      "calls_sum": 20,
+      "condition": "partial_ambiguous",
+      "duplicate_effects_sum": 5,
+      "duplicate_episodes": 5,
+      "false_failure_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "false_success_final": {
+        "count": 5,
+        "rate": 0.5
+      },
+      "latency_ticks_sum": 0,
+      "mode": "retry_only",
+      "n": 10,
+      "profile": "unsupported",
+      "reads_sum": 0,
+      "reported_success": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "safe_final": {
+        "count": 5,
+        "rate": 0.5
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "writes_final_sum": 50
+    },
+    {
+      "calls_sum": 10,
+      "condition": "partial_success",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "false_success_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "latency_ticks_sum": 0,
+      "mode": "retry_only",
+      "n": 10,
+      "profile": "unsupported",
+      "reads_sum": 0,
+      "reported_success": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "safe_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "writes_final_sum": 20
+    },
+    {
+      "calls_sum": 20,
+      "condition": "stale_false",
+      "duplicate_effects_sum": 10,
+      "duplicate_episodes": 10,
+      "false_failure_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "false_success_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "latency_ticks_sum": 0,
+      "mode": "retry_only",
+      "n": 10,
+      "profile": "unsupported",
+      "reads_sum": 0,
+      "reported_success": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "safe_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 5,
+        "rate": 0.5
+      },
+      "writes_final_sum": 60
+    },
+    {
+      "calls_sum": 20,
+      "condition": "unknown_forever",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "false_success_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "latency_ticks_sum": 0,
+      "mode": "retry_only",
+      "n": 10,
+      "profile": "unsupported",
+      "reads_sum": 0,
+      "reported_success": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "safe_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "writes_final_sum": 30
+    },
+    {
+      "calls_sum": 120,
+      "condition": "all",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 40,
+        "rate": 0.333333
+      },
+      "false_success_final": {
+        "count": 30,
+        "rate": 0.25
+      },
+      "latency_ticks_sum": 80,
+      "mode": "verify_only",
+      "n": 120,
+      "profile": "unsupported",
+      "reads_sum": 80,
+      "reported_success": {
+        "count": 50,
+        "rate": 0.416667
+      },
+      "safe_final": {
+        "count": 60,
+        "rate": 0.5
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 60,
+        "rate": 0.5
+      },
+      "writes_final_sum": 220
+    },
+    {
+      "calls_sum": 10,
+      "condition": "clean",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "false_success_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "latency_ticks_sum": 0,
+      "mode": "verify_only",
+      "n": 10,
+      "profile": "unsupported",
+      "reads_sum": 0,
+      "reported_success": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "safe_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "writes_final_sum": 30
+    },
+    {
+      "calls_sum": 10,
+      "condition": "commit_after_budget",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "false_success_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "latency_ticks_sum": 10,
+      "mode": "verify_only",
+      "n": 10,
+      "profile": "unsupported",
+      "reads_sum": 10,
+      "reported_success": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "safe_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "writes_final_sum": 30
+    },
+    {
+      "calls_sum": 10,
+      "condition": "commit_timeout",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "false_success_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "latency_ticks_sum": 10,
+      "mode": "verify_only",
+      "n": 10,
+      "profile": "unsupported",
+      "reads_sum": 10,
+      "reported_success": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "safe_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "writes_final_sum": 30
+    },
+    {
+      "calls_sum": 10,
+      "condition": "definitive_conflict",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "false_success_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "latency_ticks_sum": 0,
+      "mode": "verify_only",
+      "n": 10,
+      "profile": "unsupported",
+      "reads_sum": 0,
+      "reported_success": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "safe_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "writes_final_sum": 0
+    },
+    {
+      "calls_sum": 10,
+      "condition": "delayed_commit",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "false_success_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "latency_ticks_sum": 10,
+      "mode": "verify_only",
+      "n": 10,
+      "profile": "unsupported",
+      "reads_sum": 10,
+      "reported_success": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "safe_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "writes_final_sum": 30
+    },
+    {
+      "calls_sum": 10,
+      "condition": "delayed_unknown",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "false_success_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "latency_ticks_sum": 10,
+      "mode": "verify_only",
+      "n": 10,
+      "profile": "unsupported",
+      "reads_sum": 10,
+      "reported_success": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "safe_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "writes_final_sum": 30
+    },
+    {
+      "calls_sum": 10,
+      "condition": "false_success",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "false_success_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "latency_ticks_sum": 0,
+      "mode": "verify_only",
+      "n": 10,
+      "profile": "unsupported",
+      "reads_sum": 0,
+      "reported_success": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "safe_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "writes_final_sum": 0
+    },
+    {
+      "calls_sum": 10,
+      "condition": "no_effect_timeout",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "false_success_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "latency_ticks_sum": 10,
+      "mode": "verify_only",
+      "n": 10,
+      "profile": "unsupported",
+      "reads_sum": 10,
+      "reported_success": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "safe_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "writes_final_sum": 0
+    },
+    {
+      "calls_sum": 10,
+      "condition": "partial_ambiguous",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "false_success_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "latency_ticks_sum": 10,
+      "mode": "verify_only",
+      "n": 10,
+      "profile": "unsupported",
+      "reads_sum": 10,
+      "reported_success": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "safe_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "writes_final_sum": 20
+    },
+    {
+      "calls_sum": 10,
+      "condition": "partial_success",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "false_success_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "latency_ticks_sum": 0,
+      "mode": "verify_only",
+      "n": 10,
+      "profile": "unsupported",
+      "reads_sum": 0,
+      "reported_success": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "safe_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "writes_final_sum": 20
+    },
+    {
+      "calls_sum": 10,
+      "condition": "stale_false",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "false_success_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "latency_ticks_sum": 10,
+      "mode": "verify_only",
+      "n": 10,
+      "profile": "unsupported",
+      "reads_sum": 10,
+      "reported_success": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "safe_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 10,
+        "rate": 1.0
+      },
+      "writes_final_sum": 30
+    },
+    {
+      "calls_sum": 10,
+      "condition": "unknown_forever",
+      "duplicate_effects_sum": 0,
+      "duplicate_episodes": 0,
+      "false_failure_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "false_success_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "latency_ticks_sum": 10,
+      "mode": "verify_only",
+      "n": 10,
+      "profile": "unsupported",
+      "reads_sum": 10,
+      "reported_success": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "safe_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "suite": "stress",
+      "truth_final": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "writes_final_sum": 0
+    }
+  ],
+  "interpretation": "Seeded simulator fixtures, not LLM or production success rates",
+  "paired_safe_final": [
+    {
+      "both": 95,
+      "literal_only": 35,
+      "neither": 14,
+      "pairs": 150,
+      "profile": "supported",
+      "retry_only_only": 6
+    },
+    {
+      "both": 95,
+      "literal_only": 15,
+      "neither": 34,
+      "pairs": 150,
+      "profile": "unsupported",
+      "retry_only_only": 6
+    }
+  ],
+  "total_episodes": 2160
+}
