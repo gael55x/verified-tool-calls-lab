@@ -6,4 +6,4 @@ Paper: Isham Kalappurackal Mansoor, Abhishek Phadke, Pratip Rana, *Verified Tool
 
 Downloaded profile pages, third-party README/search prose and the unpublished Medium draft remain in the separate private local research archive, not this clean Git history. Public eligibility notes/search facts are retained; negative code availability is a bounded observation, not universal absence.
 
-The user-supplied Gaille voice references were read only for a separate unpublished draft; no article prose or images are copied into this candidate. Source-fidelity, originality/license and independent technical review remain required before public release. This inventory is not an IP-clearance opinion.
+The user-supplied Gaille voice references were read only for a separate unpublished draft; no article prose or images are copied into this repository. The review record is in `docs/TECHNICAL_REVIEW.md`. This inventory is not an IP-clearance opinion.

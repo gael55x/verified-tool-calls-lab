@@ -1,6 +1,6 @@
 # Technical review record, separate from editorial draft
 
-Status: **original independent technical/provenance review PASSED; engineering-v2/scientific re-review PASSED; independent editorial review PENDING; unpublished.** The parent reports that re-review passed 26 tests, 960 boundary combinations, a fresh 2,160-episode evaluation, audits and scientific-file hashes. Only the documentation corrections recorded below remained. No scientific rerun was requested for those documentation-only changes. No Claude model was used by this code-fix task. The earlier local CLI auth observation is historical, scoped to that environment; route verification and editorial work belong to the separate owner. Credentials/keychain contents were not inspected, authentication was not changed, and no paid prompts were sent by this task.
+Status: **original independent technical/provenance review PASSED; engineering-v2/scientific re-review PASSED; independent editorial review PENDING; Medium article unpublished.** The parent reports that re-review passed 26 tests, 960 boundary combinations, a fresh 2,160-episode evaluation, audits and scientific-file hashes. The documentation corrections recorded below required no scientific rerun. No Claude model was used by the code-fix task. The earlier local CLI auth observation is historical, scoped to that environment; route verification and editorial work belong to the separate owner. Credentials/keychain contents were not inspected, authentication was not changed, and no paid prompts were sent by that task.
 
 ## Historical run-001 author-verification record
 
@@ -30,7 +30,7 @@ The raw evaluated source is frozen at the revision above. Later reporting/diagra
 
 The completed technical reviews covered the evaluated commit, the paper's Algorithm 1 and displayed/narrative postconditions, README commands, raw counterexample traces and the declared assumptions. Relevant boundaries include the compound-action simplification, stage-receipt/pending-reservation contract, false-success definitions, settling horizon, UNKNOWN behavior, key identity and paired seeds. Changes affecting measured code require a newly frozen evaluation; documentation-only corrections preserve the existing scientific files. Old evidence remains available.
 
-Editorial review should check Gaille's voice and execution attribution, distinguish paper-versus-local numbers, avoid invented anecdotes, and retain limits/review status. User-authorized Claude editorial work is owned separately and still requires final user Medium approval. No schedule, remote push or publication is created here.
+Editorial review should check Gaille's voice and execution attribution, distinguish paper-versus-local numbers, avoid invented anecdotes, and retain limits/review status. User-authorized Claude editorial work is owned separately and still requires final user Medium approval. The earlier technical review task created no schedule, remote push or publication.
 
 ## Correction record (run-002)
 
@@ -46,4 +46,4 @@ MIT for our original code was explicitly approved by the user and is present in 
 
 ## Documentation-only corrections after scientific re-review
 
-The wrapper sequence now qualifies the effect channel as full, partial, delayed or absent and stops immediately on a definitive FAILURE retry response, without verification. The separate late-commit diagram is unchanged. The historical run-001 record and later amendment are explicitly separated, obsolete reviewer-unavailable wording is closed, and release notes distinguish private run-001 provenance from run-002's public ancestor. These corrections do not change measured code, protocol/amendment, tests or evaluation files and require no new experiment.
+The wrapper sequence now qualifies the effect channel as full, partial, delayed or absent and stops immediately on a definitive FAILURE retry response, without verification. The separate late-commit diagram is unchanged. The historical run-001 record and later amendment are explicitly separated, obsolete reviewer-unavailable wording is closed, and release notes distinguish both private evaluated revisions from the public import. Those historical documentation corrections did not change measured code, protocol/amendment, tests or evaluation files and required no new experiment.

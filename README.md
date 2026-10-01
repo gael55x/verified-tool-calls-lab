@@ -14,7 +14,7 @@ python3 -m vtc.evaluate --out repro-output/run-002
 python3 -m vtc.audit --run repro-output/run-002
 ```
 
-Choose a new output directory on each evaluation. Existing results are never overwritten. On a Git checkout the evaluator records HEAD plus individual source hashes. The frozen delivered run lives in `evidence/run-002`; use its `run_manifest.json` for the exact evaluated revision, which may precede the documentation commit at current HEAD.
+Choose a new output directory on each evaluation. Existing results are never overwritten. On a Git checkout the evaluator records HEAD plus individual source hashes. The frozen delivered run lives in `evidence/run-002`; use its `run_manifest.json` for the historical evaluated revision and source hashes. That revision is not in this public repo's clean Git history.
 
 ```sh
 python3 -m vtc.audit --run evidence/run-002
@@ -35,9 +35,9 @@ Files: `vtc/model.py` implements synthetic effects/read views; `vtc/wrappers.py`
 
 ## Evidence and review
 
-See [source mapping](docs/SOURCE_MAPPING.md), [eligibility](research/ELIGIBILITY.md), [limitations](docs/LIMITATIONS.md), [results](docs/RESULTS.md), [claim map](docs/CLAIM_EVIDENCE.md), and [technical review record](docs/TECHNICAL_REVIEW.md). Result/review/article files are added after the verified run. The unpublished Medium draft is excluded from this public candidate and retained in the separate local research checkout. Independent technical/provenance review passed for the original candidate. Engineering v2 requires re-review before the parent releases it; editorial review and final user approval still gate Medium publication. Claude was checked with version/auth commands only; no billable prompt was sent.
+See [source mapping](docs/SOURCE_MAPPING.md), [eligibility](research/ELIGIBILITY.md), [limitations](docs/LIMITATIONS.md), [results](docs/RESULTS.md), [claim map](docs/CLAIM_EVIDENCE.md), and [technical review record](docs/TECHNICAL_REVIEW.md). Result/review/article files were added after the verified run. The unpublished Medium draft is excluded from this public repository and retained in the separate local research checkout. Independent technical/provenance review and engineering-v2/scientific re-review passed. Editorial review and final user approval still gate Medium publication. Claude was checked with version/auth commands only; no billable prompt was sent by the earlier code-fix task.
 
-There are no schedules, remote Git remotes, pushes, publications or third-party messages in this project. The abandoned webhook workspace is separate and untouched.
+There are no schedules or automated third-party messages in this project. The abandoned webhook workspace is separate and untouched.
 
 ## Small demo
 
@@ -60,7 +60,7 @@ PY
 
 Expected: reported success True; safe at return True; safe after settling False; one duplicate effect. These are logical simulator events.
 
-This is a **clean-history review candidate**, not yet public. `RELEASE_PROVENANCE.json` maps original run-001 to its private development revision, which is not an ancestor in this clean Git history. Current run-002 uses evaluated revision `e64c0305b27afc5269d6eef75a50ebad6fe046d2`, directly present in this checkout's history. Separate source manifests identify both versions. Independent review should verify current hashes and run commands from the corrected release commit. See `docs/RELEASE_REVIEW.md` for excluded archives and pending gates. The sole authorized GitHub account is `gael55x`; the parent verified its authenticated identity through connected Chrome. No CLI credentials or account settings were changed here.
+This public repository was created with one clean import commit, [`775498c`](https://github.com/gael55x/verified-tool-calls-lab/commit/775498c3893f6eab866e71b9d851ab440093c4cd), whose 58-file tree matches the reviewed release archive. Neither run-001's private development revision `0a30de840b7841110bb758aa835340feeb00d9fa` nor run-002's evaluated revision `e64c0305b27afc5269d6eef75a50ebad6fe046d2` is an ancestor in this public Git history. Their identities remain provenance references; `RELEASE_PROVENANCE.json` and the run manifests map them to frozen source hashes and results. The public import verifies the released bytes, not the private commit ancestry. See `docs/RELEASE_REVIEW.md` for excluded archives and review scope.
 
 ## Corrected engineering budget (run-002)
 

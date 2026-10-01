@@ -19,7 +19,7 @@
   "development_archive_revision": "13849788800b599fa814d14bea2e92cba39011d0",
   "development_evaluated_revision": "0a30de840b7841110bb758aa835340feeb00d9fa",
   "identity_verification_source": "parent-delegation; no credential/account changes by this task",
-  "independent_technical_review": "CORRECTION RE-REVIEW PENDING",
+  "independent_technical_review": "PASS (original and engineering-v2/scientific re-review)",
   "intended_github_account": "gael55x",
   "measurement_sources_copied_byte_identically": true,
   "medium_draft_excluded": true,
@@ -37,6 +37,9 @@
   },
   "private_provenance_reference": "evidence/provenance-reference.json (bundle excluded)",
   "protocol_revision": "3e12355bff34e089b88af72bab7dda24aea5f5f2",
-  "public_release": "NOT PUSHED",
+  "public_import_commit": "775498c3893f6eab866e71b9d851ab440093c4cd",
+  "public_import_tree": "57b2a7558433c86f296c1a360b3e71c939ccb1d5",
+  "public_repository": "https://github.com/gael55x/verified-tool-calls-lab",
+  "public_release": "PUBLISHED",
   "scientific_artifacts_copied_byte_identically": true
 }
