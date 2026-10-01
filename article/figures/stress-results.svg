@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1700" height="885" viewBox="0 0 1700 885" role="img">
+<title>Designed stress cases: three measured outcomes by method and API contract</title>
+<desc>Each bar starts at zero and is labeled with its exact count out of 120 synthetic episodes. Two API contracts and four methods are shown for safe final completion, duplicate-effect episodes, and false success at tick 8.</desc>
+<rect width="1700" height="885" fill="#ffffff"/>
+<g font-family="Arial, Helvetica, sans-serif" fill="#172033">
+<text x="40" y="51" font-size="30" font-weight="bold">Designed stress cases: verified tool-call outcomes</text>
+<text x="40" y="87" font-size="19">Scripted synthetic cases · 120 episodes per method and API contract · bars show fraction of episodes</text>
+<text x="255" y="130" font-size="20" font-weight="bold">Safe final completion</text>
+<line x1="255" y1="179" x2="255" y2="750" stroke="#dce3ea"/>
+<text x="255" y="169" font-size="15" text-anchor="middle">0%</text>
+<line x1="332.5" y1="179" x2="332.5" y2="750" stroke="#dce3ea"/>
+<text x="332.5" y="169" font-size="15" text-anchor="middle">25%</text>
+<line x1="410" y1="179" x2="410" y2="750" stroke="#dce3ea"/>
+<text x="410" y="169" font-size="15" text-anchor="middle">50%</text>
+<line x1="487.5" y1="179" x2="487.5" y2="750" stroke="#dce3ea"/>
+<text x="487.5" y="169" font-size="15" text-anchor="middle">75%</text>
+<line x1="565" y1="179" x2="565" y2="750" stroke="#dce3ea"/>
+<text x="565" y="169" font-size="15" text-anchor="middle">100%</text>
+<text x="725" y="130" font-size="20" font-weight="bold">Duplicate-effect episodes</text>
+<line x1="725" y1="179" x2="725" y2="750" stroke="#dce3ea"/>
+<text x="725" y="169" font-size="15" text-anchor="middle">0%</text>
+<line x1="802.5" y1="179" x2="802.5" y2="750" stroke="#dce3ea"/>
+<text x="802.5" y="169" font-size="15" text-anchor="middle">25%</text>
+<line x1="880" y1="179" x2="880" y2="750" stroke="#dce3ea"/>
+<text x="880" y="169" font-size="15" text-anchor="middle">50%</text>
+<line x1="957.5" y1="179" x2="957.5" y2="750" stroke="#dce3ea"/>
+<text x="957.5" y="169" font-size="15" text-anchor="middle">75%</text>
+<line x1="1035" y1="179" x2="1035" y2="750" stroke="#dce3ea"/>
+<text x="1035" y="169" font-size="15" text-anchor="middle">100%</text>
+<text x="1195" y="130" font-size="20" font-weight="bold">False success at tick 8</text>
+<line x1="1195" y1="179" x2="1195" y2="750" stroke="#dce3ea"/>
+<text x="1195" y="169" font-size="15" text-anchor="middle">0%</text>
+<line x1="1272.5" y1="179" x2="1272.5" y2="750" stroke="#dce3ea"/>
+<text x="1272.5" y="169" font-size="15" text-anchor="middle">25%</text>
+<line x1="1350" y1="179" x2="1350" y2="750" stroke="#dce3ea"/>
+<text x="1350" y="169" font-size="15" text-anchor="middle">50%</text>
+<line x1="1427.5" y1="179" x2="1427.5" y2="750" stroke="#dce3ea"/>
+<text x="1427.5" y="169" font-size="15" text-anchor="middle">75%</text>
+<line x1="1505" y1="179" x2="1505" y2="750" stroke="#dce3ea"/>
+<text x="1505" y="169" font-size="15" text-anchor="middle">100%</text>
+<text x="40" y="210" font-size="21" font-weight="bold">API ignores idempotency keys</text>
+<text x="40" y="259" font-size="18">Retry only</text>
+<rect x="255" y="239" width="116.250" height="28" fill="#176c55"/>
+<text x="381.250" y="259" font-size="17" font-weight="bold">45/120</text>
+<rect x="725" y="239" width="142.083" height="28" fill="#9c4a20"/>
+<text x="877.083" y="259" font-size="17" font-weight="bold">55/120</text>
+<rect x="1195" y="239" width="193.750" height="28" fill="#70449a"/>
+<text x="1398.750" y="259" font-size="17" font-weight="bold">75/120</text>
+<text x="40" y="311" font-size="18">Verify only</text>
+<rect x="255" y="291" width="155.000" height="28" fill="#176c55"/>
+<text x="420.000" y="311" font-size="17" font-weight="bold">60/120</text>
+<circle cx="725" cy="305" r="4" fill="none" stroke="#9c4a20" stroke-width="2"/>
+<text x="735.000" y="311" font-size="17" font-weight="bold">0/120</text>
+<rect x="1195" y="291" width="77.500" height="28" fill="#70449a"/>
+<text x="1282.500" y="311" font-size="17" font-weight="bold">30/120</text>
+<text x="40" y="363" font-size="18">Paper literal</text>
+<rect x="255" y="343" width="129.167" height="28" fill="#176c55"/>
+<text x="394.167" y="363" font-size="17" font-weight="bold">50/120</text>
+<rect x="725" y="343" width="51.667" height="28" fill="#9c4a20"/>
+<text x="786.667" y="363" font-size="17" font-weight="bold">20/120</text>
+<rect x="1195" y="343" width="77.500" height="28" fill="#70449a"/>
+<text x="1282.500" y="363" font-size="17" font-weight="bold">30/120</text>
+<text x="40" y="415" font-size="18">Engineering v2</text>
+<rect x="255" y="395" width="180.833" height="28" fill="#176c55"/>
+<text x="445.833" y="415" font-size="17" font-weight="bold">70/120</text>
+<rect x="725" y="395" width="77.500" height="28" fill="#9c4a20"/>
+<text x="812.500" y="415" font-size="17" font-weight="bold">30/120</text>
+<rect x="1195" y="395" width="25.833" height="28" fill="#70449a"/>
+<text x="1230.833" y="415" font-size="17" font-weight="bold">10/120</text>
+<text x="40" y="500" font-size="21" font-weight="bold">Strong supported keys: stage receipts + pending reservations</text>
+<text x="40" y="549" font-size="18">Retry only</text>
+<rect x="255" y="529" width="116.250" height="28" fill="#176c55"/>
+<text x="381.250" y="549" font-size="17" font-weight="bold">45/120</text>
+<rect x="725" y="529" width="142.083" height="28" fill="#9c4a20"/>
+<text x="877.083" y="549" font-size="17" font-weight="bold">55/120</text>
+<rect x="1195" y="529" width="193.750" height="28" fill="#70449a"/>
+<text x="1398.750" y="549" font-size="17" font-weight="bold">75/120</text>
+<text x="40" y="601" font-size="18">Verify only</text>
+<rect x="255" y="581" width="155.000" height="28" fill="#176c55"/>
+<text x="420.000" y="601" font-size="17" font-weight="bold">60/120</text>
+<circle cx="725" cy="595" r="4" fill="none" stroke="#9c4a20" stroke-width="2"/>
+<text x="735.000" y="601" font-size="17" font-weight="bold">0/120</text>
+<rect x="1195" y="581" width="77.500" height="28" fill="#70449a"/>
+<text x="1282.500" y="601" font-size="17" font-weight="bold">30/120</text>
+<text x="40" y="653" font-size="18">Paper literal</text>
+<rect x="255" y="633" width="180.833" height="28" fill="#176c55"/>
+<text x="445.833" y="653" font-size="17" font-weight="bold">70/120</text>
+<circle cx="725" cy="647" r="4" fill="none" stroke="#9c4a20" stroke-width="2"/>
+<text x="735.000" y="653" font-size="17" font-weight="bold">0/120</text>
+<rect x="1195" y="633" width="77.500" height="28" fill="#70449a"/>
+<text x="1282.500" y="653" font-size="17" font-weight="bold">30/120</text>
+<text x="40" y="705" font-size="18">Engineering v2</text>
+<rect x="255" y="685" width="258.333" height="28" fill="#176c55"/>
+<text x="523.333" y="705" font-size="17" font-weight="bold">100/120</text>
+<circle cx="725" cy="699" r="4" fill="none" stroke="#9c4a20" stroke-width="2"/>
+<text x="735.000" y="705" font-size="17" font-weight="bold">0/120</text>
+<circle cx="1195" cy="699" r="4" fill="none" stroke="#70449a" stroke-width="2"/>
+<text x="1205.000" y="705" font-size="17" font-weight="bold">0/120</text>
+<text x="40" y="797" font-size="16">Source: evidence/run-002/cases.csv, checked against summary.json. Count/denominator shown for every bar.</text>
+<text x="40" y="825" font-size="16">Main and stress are separate designs. Reused seeds and fixed fixtures are correlated; no inferential CI or population claim.</text>
+<text x="40" y="853" font-size="16">Supported keys are a strong modeled contract, not arbitrary APIs. No LLM or production result is claimed.</text>
+</g></svg>

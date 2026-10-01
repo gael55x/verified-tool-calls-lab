@@ -1,0 +1,31 @@
+{
+  "case_rows_checked": 2160,
+  "definitions": {
+    "duplicate_episodes": "episodes with at least one extra committed append effect by tick 8",
+    "false_success_final": "wrapper reported success but safe_final is false at tick 8",
+    "safe_final": "full required state and exactly one append effect at tick 8"
+  },
+  "evaluated_source_revision": "e64c0305b27afc5269d6eef75a50ebad6fe046d2",
+  "generator_sha256": "f3ca60d01d3bdef195829679cbfce17439a89e014d2b4c116bb74d2975231d74",
+  "input_sha256": {
+    "cases.csv": "2670b49ccd124a2abad9968fee351a13c8f571f6ebb39cad4428785b995459c8",
+    "results_manifest.json": "bb2dfde34a366102f3a0c43b9ef2ebbf3b695459df9cb53f503be38eca3a4ba3",
+    "run_manifest.json": "33d49501a73a68fff7fd61a8361c6aa490b272c05b7686ec4c34f253b26bb88e",
+    "summary.json": "6ab123e79df9f156b0d82aeaf78cfe7bc1dd7db52ceda66286191a065042d302"
+  },
+  "output_sha256": {
+    "main-results.svg": "dd89eddaef072a6cb9d565fff6dc202c30cd0457cf42ac21918963a1046e80af",
+    "result-graph-data.csv": "c98e532ca70239c5afbab4b418a842aeae695ac4a28fc0020766aff10cf4c601",
+    "stress-results.svg": "9124f8d58944ea4ebfe0d5f80cd3db4239b913772ac4ff393729baf95bfa5dbd"
+  },
+  "png_dimensions": [
+    1700,
+    885
+  ],
+  "png_renderer": "macOS AppKit via scripts/render_result_png.swift; command-scoped module caches in permitted /private/tmp",
+  "png_renderer_source_sha256": "c0cc9031e75384796eb5c7908975346b561ab2ab2930a1745673d91e3dc89c5a",
+  "png_sha256": {
+    "main-results.png": "6672e57624d99f629b5c163f6add13e8fd31e3f2226bf6435b3e928a4f22099c",
+    "stress-results.png": "b836eb57660a23ead8458f390c2bb2fca101fd05f821d65c440a1f8a69934604"
+  }
+}

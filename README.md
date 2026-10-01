@@ -37,6 +37,8 @@ Files: `vtc/model.py` implements synthetic effects/read views; `vtc/wrappers.py`
 
 See [source mapping](docs/SOURCE_MAPPING.md), [eligibility](research/ELIGIBILITY.md), [limitations](docs/LIMITATIONS.md), [results](docs/RESULTS.md), [claim map](docs/CLAIM_EVIDENCE.md), and [technical review record](docs/TECHNICAL_REVIEW.md). Result/review/article files were added after the verified run. The unpublished Medium draft is excluded from this public repository and retained in the separate local research checkout. Independent technical/provenance review and engineering-v2/scientific re-review passed. Editorial review and final user approval still gate Medium publication. Claude was checked with version/auth commands only; no billable prompt was sent by the earlier code-fix task.
 
+The [measured result graphs](article/figures/RESULT_GRAPHS.md) provide full-size SVG/PNG images, exact counts for both API contracts and both evaluation suites, source data, and reproduction commands.
+
 There are no schedules or automated third-party messages in this project. The abandoned webhook workspace is separate and untouched.
 
 ## Small demo
