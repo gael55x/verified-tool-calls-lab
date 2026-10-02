@@ -1,0 +1,23 @@
+{
+  "python": "3.12.0",
+  "platform": "Darwin arm64",
+  "runs": [
+    {
+      "profile": "broken",
+      "exit_code": 1
+    },
+    {
+      "profile": "durable",
+      "exit_code": 0
+    }
+  ],
+  "custom_client": "examples.ticket_client:create_ticket",
+  "custom_client_exit": 0,
+  "source_sha256": {
+    "vtc/check.py": "473f23351a118091fb3ac96600d2d9c5fc9ef1be47b48729f08d2d486f87e856",
+    "vtc/http_example.py": "26dda229aa1b31a6b5cf18a4677cd041eb015ef021a547f6a364b2bd4935889c",
+    "examples/ticket_client.py": "4c713e5555439c89ec5f52435c110878d39759c9497aa9e4a35674a97715eedc",
+    "tests/test_check.py": "34b9cb9d18ee71fa5f24263120a51f9417ca203a06a8bf6264b7719a8042caa4"
+  },
+  "scope": "Real loopback HTTP and SQLite, controlled fixture only; not production guarantee or incident frequencies"
+}

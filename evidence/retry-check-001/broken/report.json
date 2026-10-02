@@ -1,0 +1,163 @@
+{
+  "tool": "vtc.check",
+  "target": "built-in fixture (broken) with client examples/ticket_client.py:create_ticket",
+  "exit_code": 1,
+  "note": "A pass means no duplicate or lost effect was observed in these five deterministic scenarios against this target. It is not an exactly-once proof.",
+  "scenarios": [
+    {
+      "scenario": "clean",
+      "operation_id": "retry-check-clean-1d5343ca235f4761b1552993327dab73",
+      "status": "pass",
+      "reason": "one effect and a reported success",
+      "reported": [
+        true
+      ],
+      "completed": true,
+      "effects": 1,
+      "events": [
+        "adapter:create",
+        "adapter:enter",
+        "invoke:1",
+        "invoke:1:returned:true",
+        "settle",
+        "observe",
+        "adapter:exit"
+      ],
+      "fault_events": [
+        "server:start",
+        "request:received",
+        "effect:committed"
+      ],
+      "suggestion": "None for this scenario.",
+      "abandoned": false
+    },
+    {
+      "scenario": "lost_reply",
+      "operation_id": "retry-check-lost_reply-b61468746b254dc1a5fdd51feeb05d10",
+      "status": "violation",
+      "reason": "2 side effects for one operation id",
+      "reported": [
+        true
+      ],
+      "completed": true,
+      "effects": 2,
+      "events": [
+        "adapter:create",
+        "adapter:enter",
+        "invoke:1",
+        "invoke:1:returned:true",
+        "settle",
+        "observe",
+        "adapter:exit"
+      ],
+      "fault_events": [
+        "server:start",
+        "request:received",
+        "effect:committed",
+        "lost_reply:dropped_after_commit",
+        "request:received",
+        "effect:committed"
+      ],
+      "suggestion": "Record the operation id under a UNIQUE constraint in the same transaction as the side effect, and replay the stored result for repeats.",
+      "abandoned": false
+    },
+    {
+      "scenario": "late_commit",
+      "operation_id": "retry-check-late_commit-8a19ca399443404993e58023bfeb4d42",
+      "status": "violation",
+      "reason": "2 side effects for one operation id",
+      "reported": [
+        true
+      ],
+      "completed": true,
+      "effects": 2,
+      "events": [
+        "adapter:create",
+        "adapter:enter",
+        "invoke:1",
+        "invoke:1:returned:true",
+        "settle",
+        "observe",
+        "adapter:exit"
+      ],
+      "fault_events": [
+        "server:start",
+        "request:received",
+        "late_commit:held",
+        "request:received",
+        "effect:committed",
+        "late_commit:released",
+        "effect:committed"
+      ],
+      "suggestion": "Record the operation id under a UNIQUE constraint in the same transaction as the side effect, and replay the stored result for repeats.",
+      "abandoned": false
+    },
+    {
+      "scenario": "concurrent",
+      "operation_id": "retry-check-concurrent-51ad61efe339474396f00d35e0c9b74a",
+      "status": "violation",
+      "reason": "2 side effects for one operation id",
+      "reported": [
+        true,
+        true
+      ],
+      "completed": true,
+      "effects": 2,
+      "events": [
+        "adapter:create",
+        "adapter:enter",
+        "invoke:1-2:together",
+        "invoke:1:returned:true",
+        "invoke:2:returned:true",
+        "settle",
+        "observe",
+        "adapter:exit"
+      ],
+      "fault_events": [
+        "server:start",
+        "request:received",
+        "request:received",
+        "effect:committed",
+        "concurrent:overlap",
+        "effect:committed"
+      ],
+      "suggestion": "Record the operation id under a UNIQUE constraint in the same transaction as the side effect, and replay the stored result for repeats.",
+      "abandoned": false
+    },
+    {
+      "scenario": "restart",
+      "operation_id": "retry-check-restart-26d52c3cf1444791bfded96a001ce6ce",
+      "status": "violation",
+      "reason": "2 side effects for one operation id",
+      "reported": [
+        true,
+        true
+      ],
+      "completed": true,
+      "effects": 2,
+      "events": [
+        "adapter:create",
+        "adapter:enter",
+        "invoke:1",
+        "invoke:1:returned:true",
+        "restart",
+        "invoke:2",
+        "invoke:2:returned:true",
+        "settle",
+        "observe",
+        "adapter:exit"
+      ],
+      "fault_events": [
+        "server:start",
+        "request:received",
+        "effect:committed",
+        "restart:new_process",
+        "server:start",
+        "request:received",
+        "effect:committed"
+      ],
+      "suggestion": "Record the operation id under a UNIQUE constraint in the same transaction as the side effect, and replay the stored result for repeats.",
+      "abandoned": false
+    }
+  ]
+}

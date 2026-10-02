@@ -9,13 +9,16 @@ jobs:
   reproduce:
     runs-on: ubuntu-latest
     timeout-minutes: 10
+    strategy:
+      matrix:
+        python: ['3.10', '3.12']
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           persist-credentials: false
       - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
         with:
-          python-version: '3.12'
+          python-version: ${{ matrix.python }}
       - name: Test mechanism and failure boundaries
         run: python -m unittest discover -s tests -v
       - name: Evaluate and compare frozen scientific artifacts
@@ -23,3 +26,13 @@ jobs:
           python -m vtc.evaluate --out repro-output/ci
           python -m vtc.audit --run repro-output/ci
           python -m vtc.compare evidence/run-002 repro-output/ci
+      - name: Run documented retry checks
+        run: |
+          mkdir -p repro-output
+          python -m vtc.check --profile durable --out repro-output/retry-durable
+          if python -m vtc.check --profile broken --out repro-output/retry-broken; then
+            echo 'Expected the broken service to fail'
+            exit 1
+          else
+            test "$?" -eq 1
+          fi

@@ -1,5 +1,7 @@
 # Readiness review — 2 October 2026
 
+The review below describes the original simulator release. The subsequent real HTTP/SQLite contract tool has its own evidence and independent review in [RETRY_RESULTS.md](RETRY_RESULTS.md). Its disposable durable fixture does not establish production readiness.
+
 Reviewer: Codex. Reviewed public source at `c155a551f2a96bc879ce7005c3462cefd126f60c`; this update changes presentation and adds continuous verification, not measured policies, protocol or scientific artifacts. The underlying run-002 source is identified by its frozen hashes in `evidence/run-002/run_manifest.json`.
 
 **Decision: ready as a reproducible research lab. Not ready as a production SDK or evidence of business ROI.** Professional presentation must make that scope easier to understand, not imply author endorsement or deployment approval.

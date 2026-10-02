@@ -1,0 +1,163 @@
+{
+  "tool": "vtc.check",
+  "target": "built-in fixture (durable) with client examples/ticket_client.py:create_ticket",
+  "exit_code": 0,
+  "note": "A pass means no duplicate or lost effect was observed in these five deterministic scenarios against this target. It is not an exactly-once proof.",
+  "scenarios": [
+    {
+      "scenario": "clean",
+      "operation_id": "retry-check-clean-7525f7dc2a8147f6a60e79a6262e0043",
+      "status": "pass",
+      "reason": "one effect and a reported success",
+      "reported": [
+        true
+      ],
+      "completed": true,
+      "effects": 1,
+      "events": [
+        "adapter:create",
+        "adapter:enter",
+        "invoke:1",
+        "invoke:1:returned:true",
+        "settle",
+        "observe",
+        "adapter:exit"
+      ],
+      "fault_events": [
+        "server:start",
+        "request:received",
+        "effect:committed"
+      ],
+      "suggestion": "None for this scenario.",
+      "abandoned": false
+    },
+    {
+      "scenario": "lost_reply",
+      "operation_id": "retry-check-lost_reply-5c8a5fa271674c68b0dc4b5040005252",
+      "status": "pass",
+      "reason": "one effect and a reported success",
+      "reported": [
+        true
+      ],
+      "completed": true,
+      "effects": 1,
+      "events": [
+        "adapter:create",
+        "adapter:enter",
+        "invoke:1",
+        "invoke:1:returned:true",
+        "settle",
+        "observe",
+        "adapter:exit"
+      ],
+      "fault_events": [
+        "server:start",
+        "request:received",
+        "effect:committed",
+        "lost_reply:dropped_after_commit",
+        "request:received",
+        "effect:replayed"
+      ],
+      "suggestion": "None for this scenario.",
+      "abandoned": false
+    },
+    {
+      "scenario": "late_commit",
+      "operation_id": "retry-check-late_commit-4a73201ce0ed4a339172b7348f3e46d7",
+      "status": "pass",
+      "reason": "one effect and a reported success",
+      "reported": [
+        true
+      ],
+      "completed": true,
+      "effects": 1,
+      "events": [
+        "adapter:create",
+        "adapter:enter",
+        "invoke:1",
+        "invoke:1:returned:true",
+        "settle",
+        "observe",
+        "adapter:exit"
+      ],
+      "fault_events": [
+        "server:start",
+        "request:received",
+        "late_commit:held",
+        "request:received",
+        "effect:committed",
+        "late_commit:released",
+        "effect:replayed"
+      ],
+      "suggestion": "None for this scenario.",
+      "abandoned": false
+    },
+    {
+      "scenario": "concurrent",
+      "operation_id": "retry-check-concurrent-2b74ce60cfcd48d7899ed09dc4befd05",
+      "status": "pass",
+      "reason": "one effect and a reported success",
+      "reported": [
+        true,
+        true
+      ],
+      "completed": true,
+      "effects": 1,
+      "events": [
+        "adapter:create",
+        "adapter:enter",
+        "invoke:1-2:together",
+        "invoke:1:returned:true",
+        "invoke:2:returned:true",
+        "settle",
+        "observe",
+        "adapter:exit"
+      ],
+      "fault_events": [
+        "server:start",
+        "request:received",
+        "request:received",
+        "effect:committed",
+        "concurrent:overlap",
+        "effect:replayed"
+      ],
+      "suggestion": "None for this scenario.",
+      "abandoned": false
+    },
+    {
+      "scenario": "restart",
+      "operation_id": "retry-check-restart-02f763c15d254059bb33222496de9df5",
+      "status": "pass",
+      "reason": "one effect and a reported success",
+      "reported": [
+        true,
+        true
+      ],
+      "completed": true,
+      "effects": 1,
+      "events": [
+        "adapter:create",
+        "adapter:enter",
+        "invoke:1",
+        "invoke:1:returned:true",
+        "restart",
+        "invoke:2",
+        "invoke:2:returned:true",
+        "settle",
+        "observe",
+        "adapter:exit"
+      ],
+      "fault_events": [
+        "server:start",
+        "request:received",
+        "effect:committed",
+        "restart:new_process",
+        "server:start",
+        "request:received",
+        "effect:replayed"
+      ],
+      "suggestion": "None for this scenario.",
+      "abandoned": false
+    }
+  ]
+}
