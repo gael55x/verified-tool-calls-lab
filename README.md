@@ -1,12 +1,16 @@
-# Verified tool calls: a local mechanism replication
+# Verified Tool Calls Lab
 
-An original Python standard-library implementation of the control flow in [Mansoor, Phadke & Rana, arXiv:2608.02645v1](https://arxiv.org/abs/2608.02645), with explicit engineering adaptations and falsifiable synthetic counterexamples. Owner: Gael2. Isolated personal repo; no employer code.
+A reproducible fault-injection lab for developers evaluating tool-call retries, verification and idempotency. Compare four policies against the same synthetic inputs, inspect failures, and test the server assumptions your application would need. Python standard library; no API keys or paid services.
+
+**Status: research POC, suitable for local experiments. Not a production retry SDK or an exactly-once guarantee.** Maintained by Gaille Amolong; an independent project, not an official implementation endorsed by the paper's authors.
+
+Original implementation of the control flow in [Mansoor, Phadke & Rana, arXiv:2608.02645v1](https://arxiv.org/abs/2608.02645v1), with explicitly labeled engineering adaptations and synthetic counterexamples. See the [four-perspective readiness review](docs/READINESS.md) for research validity, business value, engineering readiness and QA coverage.
 
 **This is not a reproduction of the paper's Gemini Flash-Lite/LangGraph LLM results.** A scripted compound action replaces the agent, and several undisclosed environment choices are declared in [PROTOCOL.md](PROTOCOL.md). `paper_literal` preserves Algorithm 1's early SUCCESS return, N=1 iteration bound and final-response omission. `engineering` is a different algorithm and uses stronger predicates/server assumptions. Neither is an exactly-once guarantee.
 
 ## Run locally
 
-Python 3.10+ and Git for revision recording; verified on Python 3.12.14. No dependency installation, API keys, models, network, payment systems or databases required for tests/evaluation. Run from the repository root. Commands execute sequentially.
+Python 3.10+ and Git for revision recording; replay verified on Python 3.12.0 and historical run on 3.12.14. Clone this repository, then run from its root. No dependency installation, models, network, payment systems or databases are used by tests/evaluation. Run Python normally, without `-O`: the artifact auditor uses assertions.
 
 ```sh
 python3 -m unittest discover -s tests -v
@@ -22,6 +26,24 @@ python3 -m vtc.compare evidence/run-002 repro-output/run-002
 ```
 
 `vtc.compare` checks byte identity of the five scientific artifacts, excluding run metadata such as timestamp, platform and HEAD. The delivered source manifest separately identifies the evaluated files. Official source links and sanitized search facts are included. Downloaded paper/profile/search archives remain private reviewer evidence and are excluded from this public checkout.
+
+Expected: **26 passing tests**, **2,160 episodes**, audit `PASS`, and `PASS: five scientific artifacts byte-identical`. These checks establish reproducibility for the declared simulator, not safety of an external API.
+
+## Results at a glance
+
+![Main results: safe completion, duplicate effects and false success for four policies under two server contracts](article/figures/main-results.png)
+
+With strong supported keys, engineering v2 safely completes **144/150** main cases versus **101/150** for retry-only, with zero duplicate or false-success episodes in this set. When keys are ignored, engineering safely completes **117/150**, below verify-only's **130/150**, and creates duplicates in **28/150**. There is no universally best policy here.
+
+![Designed stress results: the same outcomes across prescribed failure cases](article/figures/stress-results.png)
+
+Each main bar uses 150 episodes; each stress bar uses 120. False success is divided by **all episodes**, not reported successes. Fixed fixtures and reused seeds do not estimate production incident rates. [Full-size graphs, data and reproduction](article/figures/RESULT_GRAPHS.md) · [Exact results and interpretation](docs/RESULTS.md).
+
+## When to use this lab
+
+- **Developers:** inspect the late-commit demo below, then add a fault case before proposing a retry policy. The simulator is intentionally small; it is not a drop-in production adapter.
+- **AI evaluators:** score final state, duplicate effects and false success separately from the agent's success message. Retain paired inputs and traces.
+- **Stakeholders:** use this as evidence for an integration experiment. Any deployment case still needs real server contracts, process-crash/concurrency tests and measured operational costs. No customer ROI or reliability SLA has been established.
 
 ## What is measured
 
@@ -39,7 +61,7 @@ See [source mapping](docs/SOURCE_MAPPING.md), [eligibility](research/ELIGIBILITY
 
 The [measured result graphs](article/figures/RESULT_GRAPHS.md) provide full-size SVG/PNG images, exact counts for both API contracts and both evaluation suites, source data, and reproduction commands.
 
-There are no schedules or automated third-party messages in this project. The abandoned webhook workspace is separate and untouched.
+Original code is [MIT licensed](LICENSE); paper attribution and third-party exclusions are in [NOTICE](NOTICE.md). For contribution rules and the remaining adoption gates, see [READINESS.md](docs/READINESS.md). Other public implementations exist; this project's contribution is its explicit comparison and retained counterexamples, not exclusivity.
 
 ## Small demo
 
@@ -68,4 +90,4 @@ This public repository was created with one clean import commit, [`775498c`](htt
 
 Engineering v2 only executes a retry when at least one verification poll remains. A FALSE on the last poll returns failure without creating an unverified side effect. Literal-paper mode is unchanged. The correction and probe are documented in `PROTOCOL_AMENDMENT_002.md` and `evidence/reviewer-probe-002.json`. All 26 tests and the corrected 2,160-episode audit pass. Five scientific outputs match run-001 exactly; no aggregate improvement is claimed. The original run, original-source mapping and local provenance are preserved.
 
-Each 150-row aggregate reuses 25 seed streams across two tasks and three levels. Wilson bounds are descriptive, not independent 95% population coverage; false-success rates use all episodes. Strong supported keys model reservations and durable stage contracts rather than all APIs. Mermaid sources, captions and alt text are in `article/figures/DIAGRAMS.md`; PNG rendering is pending an existing permitted renderer.
+Each 150-row aggregate reuses 25 seed streams across two tasks and three levels. Wilson bounds are descriptive, not independent 95% population coverage; false-success rates use all episodes. Strong supported keys model reservations and durable stage contracts rather than all APIs. Mermaid sources, captions and alt text are in [DIAGRAMS.md](article/figures/DIAGRAMS.md); measured result charts are available above as PNG and in the figure directory as SVG.

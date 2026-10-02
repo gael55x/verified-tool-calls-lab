@@ -2,7 +2,7 @@
 
 Source revision: `e64c0305b27afc5269d6eef75a50ebad6fe046d2`. Source/protocol/amendment hashes and runtime are in `evidence/run-002/run_manifest.json`; exact artifact hashes are in `results_manifest.json`.
 
-**2,160 episodes completed, no excluded or failed harness cells.** Main: 1,200. Designed stress: 960. These are CPU simulator outcomes, not reproduced Gemini/LangGraph results. The 26-test log, author artifact audit and byte-identical replay are retained in `evidence/`. Five scientific files also match preserved run-001; no aggregate improvement is claimed. The added reviewer probe demonstrates withholding the last-poll retry. Original independent review passed; correction re-review is pending.
+**2,160 episodes completed, no excluded or failed harness cells.** Main: 1,200. Designed stress: 960. These are CPU simulator outcomes, not reproduced Gemini/LangGraph results. The 26-test log, author artifact audit and byte-identical replay are retained in `evidence/`. Five scientific files also match preserved run-001; no aggregate improvement is claimed. The added reviewer probe demonstrates withholding the last-poll retry. Original independent review and engineering-v2/scientific re-review passed; see [TECHNICAL_REVIEW.md](TECHNICAL_REVIEW.md). Editorial approval is separate.
 
 Safe final completion means full required state and exactly one append effect at tick 8. False success/failure uses that same safety definition and the wrapper return. Duplicate episodes count committed append effects beyond one, not repeated API calls. Counts are out of all episodes, not out of reported successes. Invoice ordinary truth success is separate in raw output.
 

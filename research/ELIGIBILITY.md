@@ -1,5 +1,7 @@
 # Eligibility check, 2026-10-01 UTC
 
+**Update, 2 October 2026:** the historical search below is not current proof of absence. A broader README search found other public projects citing and implementing ideas from this paper, including `yadukpb/verified-tool` and `freyesperales/dev-experiment-038`. See the [readiness review](../docs/READINESS.md#originality-and-attribution). This update reviews and presents the existing experiment; no new method implementation or exclusivity claim is made. Any further research premised on “no existing implementation” needs eligibility reassessment first.
+
 Decision: proceed with an original mechanism replication. No usable GitHub implementation of **this paper** was found in the bounded search. Confidence: moderate. This is not a universal absence claim or a claim to be first.
 
 Paper: Isham Kalappurackal Mansoor, Abhishek Phadke, Pratip Rana, [Verified Tool Calls Improve LLM Agent Reliability Under Non-Atomic Failures](https://arxiv.org/abs/2608.02645), arXiv:2608.02645v1. First submission: 2026-07-31 16:16:14 UTC, inside the six calendar months preceding 2026-10-01 (2026-04-01 onward). The PDF title-page date (August 5) and HTML document header (August 24) are not first submission dates. arXiv lists CC BY 4.0.
