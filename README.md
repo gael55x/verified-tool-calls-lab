@@ -1,16 +1,47 @@
 # Verified Tool Calls Lab
 
-A reproducible fault-injection lab for developers evaluating tool-call retries, verification and idempotency. Compare four policies against the same synthetic inputs, inspect failures, and test the server assumptions your application would need. Python standard library; no API keys or paid services.
+Test whether retrying an operation creates duplicate work. Run a real local HTTP/SQLite example, connect your Python client, and keep the check in CI. Includes the original reproducible research simulator. Python standard library; the bundled tests need no API keys or paid services.
 
-**Status: research POC, suitable for local experiments. Not a production retry SDK or an exactly-once guarantee.** Maintained by Gaille Amolong; an independent project, not an official implementation endorsed by the paper's authors.
+**Status: local/CI testing tool and research lab. Not a production retry SDK or an exactly-once guarantee.** Maintained by Gaille Amolong; an independent project, not an official implementation endorsed by the paper's authors.
 
 Original implementation of the control flow in [Mansoor, Phadke & Rana, arXiv:2608.02645v1](https://arxiv.org/abs/2608.02645v1), with explicitly labeled engineering adaptations and synthetic counterexamples. See the [four-perspective readiness review](docs/READINESS.md) for research validity, business value, engineering readiness and QA coverage.
 
 **This is not a reproduction of the paper's Gemini Flash-Lite/LangGraph LLM results.** A scripted compound action replaces the agent, and several undisclosed environment choices are declared in [PROTOCOL.md](PROTOCOL.md). `paper_literal` preserves Algorithm 1's early SUCCESS return, N=1 iteration bound and final-response omission. `engineering` is a different algorithm and uses stronger predicates/server assumptions. Neither is an exactly-once guarantee.
 
-## Run locally
+## Catch a duplicate-write bug in a few minutes
 
-Python 3.10+ and Git for revision recording; replay verified on Python 3.12.0 and historical run on 3.12.14. Clone this repository, then run from its root. No dependency installation, models, network, payment systems or databases are used by tests/evaluation. Run Python normally, without `-O`: the artifact auditor uses assertions.
+Python 3.10+ on Linux or macOS, from the cloned repository root. Use a Python
+interpreter of that version (for example `python3.12` if `python3` is older).
+
+```sh
+mkdir -p repro-output
+python3 -m vtc.check --profile broken --out repro-output/retry-broken
+# Expected exit 1 — the clean control passes; four fault cases create duplicates.
+python3 -m vtc.check --profile durable --out repro-output/retry-durable
+# Expected exit 0 — exactly one correct ticket in all five cases.
+```
+
+The service really writes SQLite rows over HTTP. It drops a reply after commit,
+releases a delayed write after a retry, overlaps two attempts and restarts its
+process on the same database. JSON and Markdown reports separate what the client
+reported from the final records. A missing fault or incomplete observation cannot
+receive PASS. Each output directory must be new.
+
+Use your own `function(base_url, operation_id) -> bool` against the fixture with
+`--client yourmodule:create_ticket`, or supply test-only hooks for your own service
+with `--adapter yourmodule:factory`. The fixture expects a specific ticket protocol;
+this is not automatic integration with every API. Read the [complete quickstart and
+adapter contract](docs/RETRY_CHECK.md), [measured integration results](docs/RETRY_RESULTS.md)
+and [related tools](docs/RELATED_TOOLS.md). Use disposable local test services only.
+
+The practical benefit is a regression test that can catch duplicate work before a
+retry-policy change ships. We have demonstrated this in the included reference
+application; we have not measured customer adoption or incident reduction.
+
+## Reproduce the original research experiment
+
+
+Python 3.10+ and Git for revision recording; replay verified on Python 3.12.0 and historical run on 3.12.14. Clone this repository, then run from its root. The original simulator evaluation uses no models, network or databases. The expanded test suite also uses loopback HTTP, child processes and temporary SQLite databases. No external services or payments are involved. Run Python normally, without `-O`: the artifact auditor uses assertions.
 
 ```sh
 python3 -m unittest discover -s tests -v
@@ -27,7 +58,7 @@ python3 -m vtc.compare evidence/run-002 repro-output/run-002
 
 `vtc.compare` checks byte identity of the five scientific artifacts, excluding run metadata such as timestamp, platform and HEAD. The delivered source manifest separately identifies the evaluated files. Official source links and sanitized search facts are included. Downloaded paper/profile/search archives remain private reviewer evidence and are excluded from this public checkout.
 
-Expected: **26 passing tests**, **2,160 episodes**, audit `PASS`, and `PASS: five scientific artifacts byte-identical`. These checks establish reproducibility for the declared simulator, not safety of an external API.
+Expected: the full test suite passes (including the original 26 mechanism tests), **2,160 simulator episodes**, audit `PASS`, and `PASS: five scientific artifacts byte-identical`. These checks establish reproducibility for the declared simulator, not safety of an external API.
 
 ## Results at a glance
 
@@ -41,7 +72,7 @@ Each main bar uses 150 episodes; each stress bar uses 120. False success is divi
 
 ## When to use this lab
 
-- **Developers:** inspect the late-commit demo below, then add a fault case before proposing a retry policy. The simulator is intentionally small; it is not a drop-in production adapter.
+- **Developers:** inspect the late-commit demo below, then add a fault case before proposing a retry policy. For your own client, use the HTTP contract checks above. Neither component is a drop-in production retry SDK.
 - **AI evaluators:** score final state, duplicate effects and false success separately from the agent's success message. Retain paired inputs and traces.
 - **Stakeholders:** use this as evidence for an integration experiment. Any deployment case still needs real server contracts, process-crash/concurrency tests and measured operational costs. No customer ROI or reliability SLA has been established.
 
