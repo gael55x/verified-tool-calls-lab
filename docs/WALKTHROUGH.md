@@ -146,7 +146,6 @@ The practical moment is before a change that touches retries, such as raising an
 
 ```mermaid
 flowchart TD
-    subgraph PROP[Proposed integration, not completed]
         CI[Local run or CI job] --> RUN[vtc.check runner]
         RUN --> AD[Project adapter]
         AD --> CL[Existing app client]
@@ -156,10 +155,9 @@ flowchart TD
         AD -.->|restart and settle hooks| APP
         AD -->|observe intended operation and all test effects| DB
         RUN --> GATE[Report and exit code gate]
-    end
 ```
 
-*Figure 4. A proposed local or CI integration for an independent application. This is a design sketch, not completed work, and no external application has been connected yet.*
+*Figure 4. How a project-specific adapter would connect the checker to a local application and its test database.*
 
 
 The hooks must be cooperative. The checker cannot reach into an arbitrary process to drop a reply after commit or hold a write, so the application needs test-only switches for those faults, a restart against the same disposable database and a settle signal that truthfully reports when in-flight work is done. The checker trusts the adapter's observations and labels rather than discovering them. Other tools cover nearby ground, and the [related tools](https://github.com/gael55x/verified-tool-calls-lab/blob/main/docs/RELATED_TOOLS.md) page lists alternatives worth comparing. I make no claim that this approach is unique or that any team will adopt it.

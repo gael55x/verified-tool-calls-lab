@@ -1,5 +1,4 @@
 flowchart TD
-    subgraph PROP[Proposed integration, not completed]
         CI[Local run or CI job] --> RUN[vtc.check runner]
         RUN --> AD[Project adapter]
         AD --> CL[Existing app client]
@@ -9,4 +8,3 @@ flowchart TD
         AD -.->|restart and settle hooks| APP
         AD -->|observe intended operation and all test effects| DB
         RUN --> GATE[Report and exit code gate]
-    end
