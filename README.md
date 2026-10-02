@@ -8,6 +8,9 @@ Original implementation of the control flow in [Mansoor, Phadke & Rana, arXiv:26
 
 **This is not a reproduction of the paper's Gemini Flash-Lite/LangGraph LLM results.** A scripted compound action replaces the agent, and several undisclosed environment choices are declared in [PROTOCOL.md](PROTOCOL.md). `paper_literal` preserves Algorithm 1's early SUCCESS return, N=1 iteration bound and final-response omission. `engineering` is a different algorithm and uses stronger predicates/server assumptions. Neither is an exactly-once guarantee.
 
+
+Read the [technical walkthrough](docs/WALKTHROUGH.md) for the implementation, measured evidence, runnable examples and Mermaid diagrams. Proposed external integrations are labeled separately from implemented behavior.
+
 ## Catch a duplicate-write bug in a few minutes
 
 Python 3.10+ on Linux or macOS, from the cloned repository root. Use a Python

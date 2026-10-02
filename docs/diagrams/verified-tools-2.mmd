@@ -1,0 +1,18 @@
+sequenceDiagram
+    participant R as Runner through adapter
+    participant C as Client
+    participant S as Ticket service
+    participant D as SQLite
+    R->>C: invoke with operation id K
+    C->>S: attempt 1, key K, title printer on fire
+    S->>D: BEGIN IMMEDIATE, no row for K, INSERT, COMMIT
+    S->>D: log lost_reply dropped_after_commit
+    S--xC: connection closed, no reply
+    C->>S: attempt 2, same key K, same payload
+    S->>D: BEGIN IMMEDIATE, find matching K and payload, COMMIT
+    S-->>C: 200 with the existing ticket id
+    C-->>R: True
+    R->>S: settle
+    S-->>R: quiesced true
+    R->>D: observe read only, count all rows, find K and payload
+    D-->>R: completed, 1 effect, fault label present

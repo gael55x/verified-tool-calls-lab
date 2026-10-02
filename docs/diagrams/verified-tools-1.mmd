@@ -1,0 +1,14 @@
+flowchart TD
+    RUN[vtc.check runner] -->|scenario| FAC[Adapter factory]
+    FAC --> AD[Fixture adapter]
+    RUN -->|invoke with stable operation id| AD
+    AD --> CL[Client with bounded retries]
+    CL -->|HTTP POST with Idempotency-Key| API[Local ticket service on 127.0.0.1]
+    API --> DB[(Per-case SQLite file)]
+    RUN -->|restart and settle| AD
+    AD -->|kill, start, settle endpoint| API
+    RUN -->|observe| AD
+    AD -->|read only query| DB
+    AD -->|Observation| VER[Verdict rules]
+    CL -->|reported outcome| VER
+    VER --> REP[Reports and exit code]

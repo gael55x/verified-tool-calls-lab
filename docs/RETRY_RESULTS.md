@@ -62,3 +62,5 @@ your own checks and [related tools](RELATED_TOOLS.md) for existing alternatives.
 The retained reports were captured before the final SIGTERM cleanup patch. Their
 manifest preserves the exact source hashes from that run. CI runs the final revision
 on Python 3.10 and 3.12, including cancellation regression tests and both quickstarts.
+
+A [fresh reader replay](../evidence/reader-replay-20261002/manifest.json) verifies both CLI profiles against source commit 952881ffb8aa47e6704e5f8bae05e57073cb9ed6, including the final cancellation patch. Broken and durable reports are retained alongside that manifest. These remain controlled reference fixtures.

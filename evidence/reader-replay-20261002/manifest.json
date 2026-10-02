@@ -1,0 +1,19 @@
+{
+  "source_commit": "952881ffb8aa47e6704e5f8bae05e57073cb9ed6",
+  "python": "3.12.0",
+  "platform": "macOS-15.6.1-arm64-arm-64bit",
+  "scope": "Fresh reader quickstart verification, same controlled reference fixtures; not an independent application integration",
+  "source_sha256": {
+    "vtc/check.py": "fe50383a7c7f2f48aeebec725a0a9da9802386c8d443cba034aeae0d1140c9f8",
+    "vtc/http_example.py": "26dda229aa1b31a6b5cf18a4677cd041eb015ef021a547f6a364b2bd4935889c",
+    "examples/ticket_client.py": "4c713e5555439c89ec5f52435c110878d39759c9497aa9e4a35674a97715eedc"
+  },
+  "commands": [
+    "python3 -m vtc.check --profile broken --out NEW_OUTPUT_DIRECTORY",
+    "python3 -m vtc.check --profile durable --out NEW_OUTPUT_DIRECTORY"
+  ],
+  "observed_exit_codes": {
+    "broken": 1,
+    "durable": 0
+  }
+}

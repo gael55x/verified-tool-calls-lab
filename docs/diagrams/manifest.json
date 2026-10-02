@@ -1,0 +1,16 @@
+{
+  "source": "Original project diagrams, authored with Claude Opus 5.5 and independently reviewed by Codex",
+  "renderer": "12.0.0",
+  "outputs": {
+    "measured-results.png": "e4e25c61f449a66bedd7687f6fb58963b5488a0602d95f45e19a8ac3968534e9",
+    "verified-tools-1.mmd": "4e1dbb6e0168678c944a912ff8fedfe904bd3c113c6442e0fc4e684a4e5d4514",
+    "verified-tools-1.png": "f546f34140a1a6ff8bf6378e930831f2c94fb7992531f7dc4788551ec5dc6180",
+    "verified-tools-1.svg": "c8234abddd51b38a55adb23730acd2517492db6b32083db735f9f4214fe49fc3",
+    "verified-tools-2.mmd": "e1388487390fcf4edd7066b0dcbbc8d40c0d265685a1f8ad714a65a98dbf6c04",
+    "verified-tools-2.png": "5b6d61739f2e7a476d62576d92b25b1b377510b507f9a681216a7536a7f1eb72",
+    "verified-tools-2.svg": "0f36a7d45988e8735f40725198f33e391f588b2011f0195ad5530e67dd81f39d",
+    "verified-tools-3.mmd": "3f0097e7adb6d978a462fc0fe7ee9c73d44ad42c35171a33be31eebb690689aa",
+    "verified-tools-3.png": "3e96b48a8d5b830c38df819878c480f5fc45e0d551bdf84ba92ad5c929b992b2",
+    "verified-tools-3.svg": "45e6efd674fd64e509f527612725a23b6dd0397bd99ca818366b597ca31f22f9"
+  }
+}
