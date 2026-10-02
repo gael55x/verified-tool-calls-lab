@@ -9,7 +9,7 @@ Run-file names below refer to **publicly included** `evidence/run-002/` unless a
 | Eligible first submission date; bounded code search | `research/ELIGIBILITY.md`, `research/search-facts.json`, [official arXiv record](https://arxiv.org/abs/2608.02645) | v1 July 31, 2026; no universal code-absence claim |
 | No usable implementation located | Public search facts and title/ID count JSON | total_count=0; 27 public author repos screened; unindexed/private code remains possible |
 | Locally predeclared before implementation commit | `evidence/predeclaration.json`, `evidence/provenance-reference.json`, `evidence/independent-review-001.json` | chain independently verified; not external timestamp/public preregistration |
-| Correction declared before corrected implementation | `PROTOCOL_AMENDMENT_002.md`, `evidence/predeclaration-002.json`, public Git ancestry | amendment 2ee93de precedes evaluated e64c030 |
+| Correction declared before corrected implementation | `PROTOCOL_AMENDMENT_002.md`, `evidence/predeclaration-002.json`, `docs/TECHNICAL_REVIEW.md` | reviewed private development chain places amendment 2ee93de before evaluated e64c030; neither commit is in public ancestry |
 | 26 tests passed | `evidence/test-log-002.txt` | exit_code=0; no skips; three additional regression tests |
 | 2,160 episodes without exclusions | `cases.csv`, `summary.json`, `evidence/verification-002.json` | main=1200; stress=960; 270 input families times 8 methods/profiles |
 | Corrected replay reproduces exactly | `evidence/verification-002.json`, `vtc.compare` | five scientific files identical to replay and preserved run-001 |
@@ -26,9 +26,9 @@ Run-file names below refer to **publicly included** `evidence/run-002/` unless a
 | Stage receipts/pending reservations affect safety | public run traces and tests | supported suppresses repeats; unsupported partial/late effects can duplicate |
 | Key recreation/identity sensitivities are tested | test source/log | simulations, not actual process restart or invoice-domain guarantees |
 | Original candidate independently verified | `evidence/independent-review-001.json` | original a7c9fe5 matrix, tests, audit, replay and provenance passed |
-| Corrected candidate needs re-review | `docs/TECHNICAL_REVIEW.md` | author verification completed; correction review pending |
+| Corrected candidate independently re-reviewed | `docs/TECHNICAL_REVIEW.md`, `docs/RELEASE_REVIEW.md` | engineering-v2/scientific re-review passed; Medium publication remains a separate gate |
 | Original chart values come from current data | `article/figures/main-safe-completion.svg`, reporting script | run-002 safe_final counts, n=150 |
-| Editable original Mermaid sequences are included | `article/figures/*.mmd`, `DIAGRAMS.md` | v2 retry capacity and late-commit case; PNG rendering pending |
+| Editable diagrams and rendered walkthrough figures are included | `article/figures/*.mmd`, `docs/diagrams/*`, `docs/diagrams/manifest.json` | historical sequence sources remain editable; current walkthrough diagrams have PNG/SVG renders and file hashes |
 
 ## Private reviewer archive: excluded files
 
