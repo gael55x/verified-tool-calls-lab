@@ -2,11 +2,11 @@
 
 *A local HTTP and SQLite check for the moment a write commits and its reply disappears*
 
-A support agent clicks Create ticket because a printer has stopped working. The app sends one POST request. The ticket service opens a transaction, inserts the row and commits. Then the connection closes before any reply reaches the app. To the app, the request failed. To the database, the work is done. The retry logic does what it was configured to do and sends the request again.
+Imagine a support agent clicking Create ticket because a printer has stopped working. The app sends one POST request. The ticket service opens a transaction, which groups database changes into one all-or-nothing step, inserts the row and commits. Then the connection closes before any reply reaches the app. To the app, the request failed. To the database, the work is done. The retry logic does what it was configured to do and sends the request again.
 
-Whether the queue now holds one ticket or two was decided long before that click. It depends on whether the retry reuses the same operation key, whether the service checks that key inside the same transaction as the insert, and whether anyone ever tested a commit that succeeds while its reply vanishes.
+Whether the queue now holds one ticket or two was decided long before that click. It depends on whether the retry reuses the same operation key, an ID marking both attempts as the same job, whether the service checks that key inside the same transaction as the insert, and whether anyone ever tested a commit that succeeds while its reply vanishes.
 
-This article follows that one ticket from the first attempt to the final database count. The research starting point is [Verified Tool Calls Improve LLM Agent Reliability Under Non-Atomic Failures, arXiv 2608.02645v1](https://arxiv.org/abs/2608.02645v1). I built a proof of concept based on the paper, and the code is in [Verified Tool Calls Lab](https://github.com/gael55x/verified-tool-calls-lab). The repository holds two separate pieces of work. One is my original simulator study of 2,160 scripted episodes. The other is a practical checker, `vtc.check`, which drives a real HTTP client against a real local service that stores tickets in SQLite. They answer different questions, so I keep their evidence apart.
+This article follows that one ticket from the first attempt to the final database count. The research starting point is [Verified Tool Calls Improve LLM Agent Reliability Under Non-Atomic Failures, arXiv 2608.02645v1](https://arxiv.org/abs/2608.02645v1) (Mansoor et al., 2026). I built a proof of concept based on the paper, and the code is in [Verified Tool Calls Lab](https://github.com/gael55x/verified-tool-calls-lab) (Amolong, 2026). The repository holds two separate pieces of work. One is my original simulator study of 2,160 scripted episodes. The other is a practical checker, `vtc.check`, which drives a real HTTP client against a real local service that stores tickets in SQLite. They answer different questions, so I keep their evidence apart.
 
 The useful question is whether a retry change leaves one correct record. Here is how to test that, read the evidence and connect the checker to a different application.
 
@@ -74,9 +74,29 @@ sequenceDiagram
 
 The fault is injected where it hurts most. The service commits the first ticket, writes the label `lost_reply:dropped_after_commit` to an audit table and closes the connection without a response. The client sees a dropped connection and retries with the same key and body. What happens next depends entirely on how the service writes.
 
-In `vtc/http_example.py`, the durable writer begins a SQLite `BEGIN IMMEDIATE` transaction, looks for the key, then inserts only if it is absent. A `UNIQUE` constraint backs the check. A repeat with the same key and payload returns the original ticket. Reusing the key with a different payload returns 422. The implementation commits the result or rolls back on an exception.
+The durable profile's writer in `vtc/http_example.py` decides, inside a single SQLite transaction, whether a request creates a ticket, replays an existing one or is rejected. This is an excerpt from the running fixture, not a standalone server.
 
-The lookup and write belong in the same transaction. Separating them would let two requests both find no record before either inserts.
+```python
+def _write_durable(conn, key, payload):
+    conn.execute("BEGIN IMMEDIATE")
+    try:
+        row = conn.execute("SELECT id, payload FROM tickets WHERE op_key = ?", (key,)).fetchone()
+        if row is None:
+            ticket = conn.execute("INSERT INTO tickets (op_key, payload) VALUES (?, ?)", (key, payload)).lastrowid
+            result = 201, {"id": ticket}
+        elif row[1] == payload:
+            result = 200, {"id": row[0]}
+        else:
+            result = 422, {"error": "idempotency key reused with a different payload"}
+        conn.execute("COMMIT")
+    except BaseException:
+        if conn.in_transaction:
+            conn.execute("ROLLBACK")
+        raise
+    return result
+```
+
+`BEGIN IMMEDIATE` takes the write lock before the lookup, so the key check and insert share one transaction and overlapping requests cannot both find no row. A new key inserts and returns 201. The same key and payload returns 200 with the stored id, which a retry after a lost reply receives. A reused key with a different payload returns 422. Every outcome commits, any exception rolls back and re-raises, and a UNIQUE constraint on `op_key`, defined elsewhere in the schema, backs the check.
 
 The broken profile shows the tempting alternative. It inserts on every request and remembers replies in an in-memory dictionary, but only after a reply has been written to the socket. When the reply is lost nothing is cached, so the retry inserts a second ticket. That cache also disappears on restart and does nothing for overlapping requests or a late first write.
 
@@ -168,5 +188,15 @@ The durable profile protects one transactional database write. If creating a tic
 
 Next comes a public application running locally. Write the integration’s acceptance test first and capture its unchanged baseline. Confirm any candidate defect by tracing its code and reproducing it independently. If it already passes, a clearly labeled mutation can test the checker’s ability to detect failure. Keep genuine findings and seeded failures separate. Make the smallest change that passes the test, then refactor with the test still green.
 
-Back at the support desk, the question is concrete. If that first commit stands and its reply never arrives, does the queue hold one ticket? This checker lets you answer it locally, before anyone has to close a second ticket for the same broken printer.
+## 10. Conclusion and how this helps you
 
+This pattern gives you a concrete shape to compare against your own write path. If lookup and insert are separate and no atomic database constraint protects the operation key, these scenarios can expose duplicate writes. A reply cache populated only after sending the response has different failure gaps. The checker exercises this against a real local HTTP service and SQLite file, but it does not yet include an adapter for any independent application.
+
+Before your next retry change, run both profiles from a fresh clone and confirm the broken one exits 1 and the durable one exits 0. Then read your own create handler and check whether lookup and insert share one transaction, backed by a unique key.
+
+
+## References
+
+Amolong, G. (2026). *Verified tool calls lab* (Version d564e13) [Computer software]. GitHub. [https://github.com/gael55x/verified-tool-calls-lab/tree/d564e13887d239e1d60b7fa60586e795d821ebe7](https://github.com/gael55x/verified-tool-calls-lab/tree/d564e13887d239e1d60b7fa60586e795d821ebe7)
+
+Mansoor, I. K., Phadke, A., & Rana, P. (2026). *Verified tool calls improve LLM agent reliability under non-atomic failures* [Preprint]. arXiv. [https://doi.org/10.48550/arXiv.2608.02645](https://doi.org/10.48550/arXiv.2608.02645)
